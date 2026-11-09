@@ -5,9 +5,10 @@
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: Delta
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
+- Đề tài đã chọn: Cập nhật MVP realtime.
+- Candidate problem được chọn (1 câu): Khi khách góp ý trong buổi pitching, nhóm chưa thể cập nhật giao diện ngay, nên phải chỉnh sửa nội bộ rồi hẹn thêm buổi để trình bày lại.
 - Quyết định cuối: Go / Not Yet / No-Go
 
 ---
@@ -62,7 +63,7 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 | | | | | | | | | |
 | | | | | | | | | |
 
-**Candidate được chọn:**
+**Candidate được chọn:** Các vòng chỉnh sửa giao diện MVP sau khi khách góp ý trong buổi pitching (Problem Card #2 của Hiếu). Nhóm chốt hướng tìm hiểu cập nhật MVP realtime.
 
 **Vì sao chọn:**
 
@@ -116,9 +117,50 @@ Tổng hợp:
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Google Cloud Speech-to-Text | [Streaming recognition](https://docs.cloud.google.com/speech-to-text/docs/streaming-recognize) và [kết quả tạm thời, kết quả cuối](https://docs.cloud.google.com/speech-to-text/docs/v1/speech-to-text-requests#streaming_speech-to-text_api_recognition_requests) | Chuyển lời nói trong buổi pitching thành văn bản. | Trả kết quả trong lúc nhận âm thanh và phân biệt bản chép tạm với kết quả cuối. | Văn bản chưa cho biết câu nào là yêu cầu sửa. Kết quả tạm có thể thay đổi khi người nói nói tiếp. | Chỉ đưa đoạn nhận dạng cuối vào bước phân loại yêu cầu. Đo độ trễ từ lúc người nói kết thúc câu đến lúc giao diện đổi. |
+| Figma Make | [Chỉnh sửa tệp Figma Make](https://help.figma.com/hc/en-us/articles/42009840449175-Edit-a-Figma-Make-file) và [FAQ](https://help.figma.com/hc/en-us/articles/31722591905559-Figma-Make-FAQs) | Dùng prompt hoặc công cụ chỉnh sửa để thay đổi bản xem trước. | Tài liệu mô tả cập nhật preview khi người dùng gửi prompt và có hỗ trợ nhập prompt bằng giọng nói. | Luồng được tài liệu mô tả bắt đầu từ một prompt hoặc thao tác chỉnh sửa có chủ đích. Nguồn chưa xác nhận khả năng tự phát hiện yêu cầu trong cuộc hội thoại rồi áp dụng ngay. | Dùng làm mốc so sánh với phương án có người nhập yêu cầu. Thử xem tự nhận yêu cầu có giảm thao tác mà vẫn giữ đúng ý khách hay không. |
+| JSON Patch (RFC 6902) | [RFC 6902, mục 4–5](https://www.rfc-editor.org/rfc/rfc6902.html#section-4) | Áp thay đổi có cấu trúc lên trạng thái bản xem trước nếu giao diện biểu diễn được bằng JSON. | Cho phép sửa đúng trường và kiểm tra giá trị hiện tại trước khi áp dụng. | Chuẩn chỉ mô tả thao tác trên dữ liệu. Nhóm vẫn cần ánh xạ yêu cầu nói thành phần tử giao diện, kiểm tra phạm vi và lưu bản trước khi sửa. | Thử trên một màn hình, với thao tác đổi nhãn hoặc vị trí nút đã định sẵn. Giữ bản trước để có thể khôi phục nếu kết quả sai ý. |
+
+#### Sơ đồ khoảng trống cần thử nghiệm
+
+Sơ đồ nối các bước tham khảo thành luồng đề xuất cho **một màn hình MVP**. Các công cụ trong bảng là nguồn đối chiếu cho từng bước.
+
+```mermaid
+flowchart LR
+    speech["Cuộc trao đổi khi pitching"]
+    transcript["Chép lời realtime<br/>Tham khảo Google Cloud Speech-to-Text"]
+    intent{"Có yêu cầu sửa rõ ràng<br/>và đúng phạm vi?"}
+    listen["Tiếp tục nghe<br/>Giao diện giữ nguyên"]
+    patch["Áp thay đổi có cấu trúc<br/>Tham khảo JSON Patch"]
+    preview["Bản xem trước tự cập nhật"]
+    comparison["Figma Make<br/>Mốc so sánh khi người dùng chủ động gửi prompt"]
+
+    speech --> transcript --> intent
+    intent -->|Chưa rõ hoặc chỉ trao đổi| listen
+    intent -->|Có| patch --> preview
+    comparison -.-> preview
+
+    classDef source fill:#e6f1ff,stroke:#5c83be,color:#10254a
+    classDef experiment fill:#d4e6ff,stroke:#1e55b5,color:#10254a
+    class transcript,patch,comparison source
+    class intent,preview experiment
+```
+
+**Điểm cần kiểm chứng.** Chuyển lời nói thành văn bản và áp thay đổi có cấu trúc là hai bước có tài liệu tham khảo. Phần cần thử là liệu hệ thống có nhận đúng **ý định sửa giao diện trong cuộc trao đổi tự nhiên** và áp dụng đủ nhanh để bản sửa xuất hiện ngay trong lúc pitching.
+
+**Tình huống để bàn giao cho CP5–CP6**
+
+- **Yêu cầu rõ:** Khách nói “Đưa nút Đặt lịch lên đầu màn hình”. Bản xem trước tự đổi đúng vị trí. Đo từ lúc khách nói xong đến lúc nút xuất hiện ở vị trí mới.
+- **Trao đổi thông thường:** Khách hỏi “Nút Đặt lịch hiện nằm ở đâu?”. Giao diện giữ nguyên.
+- **Yêu cầu mơ hồ:** Khách nói “Chỗ này nhìn chưa ổn”. Công cụ tiếp tục nghe cho đến khi xác định được phần tử và thay đổi cụ thể.
+
+**Bàn giao kiểm thử.** [Bộ 20 tình huống cho bản thử](../assets/cp4-bo-tinh-huong-mvp.md) có trạng thái ban đầu, kết quả mong đợi và mẫu ghi thời gian. Số liệu kiểm thử sẽ được điền khi nhóm có bản chạy thực tế.
+
+**Đối chiếu số liệu trước khi chốt baseline**
+
+- [Problem Card #2 của Hiếu](../individual/2A202603993_CaoTrungHieu.md#problem-card-2) ghi khoảng **15–20 phút trao đổi lại và cập nhật mỗi vòng**, khoảng 2–3 vòng mỗi MVP. Tổng **30–60 phút** ở đó chỉ tính phần trao đổi theo vòng.
+- [Slide Vấn đề](../cac-vong-chinh-sua-mvp.html#slide-2) dùng ước tính khoảng **2 giờ cho toàn bộ một buổi pitching**, 2–3 buổi mỗi MVP, tức **4–6 giờ họp**. Con số **6–9 giờ** chỉ áp dụng nếu nhóm dành thêm khoảng **1 giờ chỉnh sửa nội bộ sau mỗi buổi**.
+- Ở mục 3.2, ghi riêng tổng thời lượng buổi họp, số phút dành riêng cho việc làm rõ phản hồi, và số lần thực sự phải chỉnh sửa sau họp. Khi tính tổng, cộng thời lượng họp với thời gian chỉnh sửa nội bộ thực tế. Thời gian trao đổi đã nằm trong buổi họp cần được ghi riêng để tránh cộng hai lần.
 
 ---
 
