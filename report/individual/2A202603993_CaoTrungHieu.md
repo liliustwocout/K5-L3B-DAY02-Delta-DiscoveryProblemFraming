@@ -194,5 +194,8 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 ---
 
 ## 7. Tài liệu tham khảo
-
--
+1. Card #1 (ghi chú sau họp): Zoom — AI meeting notes, time savings: https://www.zoom.com/en/blog/ai-meeting-notes-time-savings-roi/
+2. Card #2 (vòng chỉnh sửa MVP): Techstack — How we reduce revisions and keep product decisions moving: https://tech-stack.com/blog/how-we-reduce-revisions-and-keep-product-decisions-moving/
+3. Card #3 (thương hiệu cá nhân): HR Magazine — Personal branding vital for employers and employees: https://www.hrmagazine.co.uk/content/news/personal-branding-vital-for-employers-and-employees-research-shows
+4. Phương pháp Job Story: Mountain Goat Software — Job Stories Offer a Viable Alternative to User Stories: https://mountaingoatsoftware.com/blog/job-stories-offer-a-viable-alternative-to-user-stories
+5. Phương pháp OST / discovery: Product Talk (Teresa Torres) — Opportunity Solution Tree: https://www.producttalk.org/glossary-discovery-opportunity-solution-tree/
