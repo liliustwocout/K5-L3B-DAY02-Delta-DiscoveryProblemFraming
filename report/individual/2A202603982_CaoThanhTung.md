@@ -1,7 +1,6 @@
 # Báo cáo cá nhân — 2A202603982_CaoThanhTung
 
 > Đổi tên file theo quy tắc `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md` (MSSV trước, dấu `_`, họ tên viết liền không dấu). Sửa cả dòng tiêu đề phía trên cho khớp.
-> Template chi tiết và prompt mẫu cho từng mục: [docs/01-worksheet.md](../../docs/01-worksheet.md).
 > Mỗi thành viên một file trong `report/individual/` trên repo nhóm: copy template này thành file mới, điền, rồi commit bằng tài khoản GitHub của bạn. Không viết hộ người khác.
 
 ## 1. Thông tin học viên
@@ -192,7 +191,7 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
-- Ban đầu tôi định bảo vệ ý tưởng xây dựng công cụ kiểm tra checklist nộp bài lab . Tuy nhiên, sau khi nghe thành viên nhóm pitch về nỗi đau thực tế của team khi đi pitching MVP với khách hàng bị trễ cả tuần chỉ vì sửa vài chi tiết giao diện nhỏ, tôi thấy bài toán đó có tác động kinh doanh lớn hơn và xứng đáng làm đề tài chung cho nhóm, nên tôi đã đồng thuận chuyển hướng sang bài toán cập nhật MVP realtime.
+- Ban đầu tôi định bảo vệ ý tưởng xây dựng công cụ kiểm tra checklist nộp bài lab . Tuy nhiên, sau khi nghe thành viên nhóm pitch về nỗi đau thực tế của team khi đi pitching MVP với khách hàng phải hẹn lại để khách xem vài thay đổi giao diện nhỏ, tôi thấy bài toán đó có tác động kinh doanh lớn hơn và xứng đáng làm đề tài chung cho nhóm, nên tôi đã đồng thuận chuyển hướng sang bài toán cập nhật MVP realtime.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
@@ -208,9 +207,14 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
-- Bài toán của nhóm tôi giải quyết nỗi đau của các nhóm phát triển khi đi pitching MVP với khách hàng: mỗi lần khách góp ý chỉnh sửa giao diện, nhóm không thể sửa ngay trong buổi họp mà phải tốn 2–3 ngày họp nội bộ và hẹn thêm buổi khác để trình bày lại.
-- Quy trình hiện tại gồm 4 bước từ lắng nghe góp ý, họp thống nhất, thiết kế lại giao diện cho đến hẹn gặp lại; trong đó bước họp chốt thay đổi và chờ đợi buổi họp tiếp theo là điểm nghẽn tốn nhiều ngày nhất. Mục tiêu đo lường thành công là giảm số vòng chỉnh sửa từ 2–3 vòng xuống còn tối đa 1 vòng/MVP và rút ngắn thời gian chốt giao diện với khách hàng ngay trong hoặc ngay sau buổi họp. Ranh giới được thiết lập rất chặt: AI chỉ được phép gợi ý và áp dụng các thay đổi giao diện nhỏ (như màu sắc, vị trí nút, component có sẵn), tuyệt đối không tự ý thay đổi cấu trúc luồng người dùng hay logic nghiệp vụ lớn nếu chưa có sự phê duyệt của Product Manager.
-- Nhóm chọn mức can thiệp là Workflow (kết hợp Speech-to-Text trích xuất ý kiến khách, Rule phân loại mức độ thay đổi và AI hỗ trợ cập nhật giao diện trực tiếp), vì các bước xử lý rất định sẵn và không giao cho Agent quyền tự quyết. Quyết định cuối cùng là Go (thử nghiệm phạm vi nhỏ) trên các dự án nội bộ; ngưỡng dừng là nếu sau 1 tháng thử nghiệm mà thời gian hoàn thiện MVP không giảm được ít nhất 30–40% hoặc tỷ lệ chỉnh sửa sai giao diện quá 20% thì nhóm sẽ dừng lại và quay về quy trình ghi nhận biên bản họp thủ công.
+- Khi khách đề nghị sửa giao diện trong buổi pitch, đội phát triển có thể phải chỉnh sau buổi rồi hẹn khách xem lại.
+- Quy trình gồm nhận góp ý, làm rõ, chỉnh nội bộ, gửi hoặc trình bày bản sửa và ghi nhận xác nhận của khách.
+- Điểm nghẽn là thời gian bàn giao và chờ xem bản sửa. Nhóm theo dõi thời gian từ lúc khách nói xong đến khi thấy bản sửa và xác nhận.
+- Mục tiêu thử nội bộ là còn 1 vòng/MVP từ mức khoảng 2–3 vòng và giảm 30–40% thời gian triển khai.
+- Bản thử chỉ đổi nhãn hoặc vị trí nút Đặt lịch trên bản xem trước màn hình Lịch tư vấn, dưới sự kiểm tra của người trình bày.
+- Nhóm chọn Workflow vì AI nhận diện yêu cầu, còn Rule kiểm phạm vi và áp thao tác đã định.
+- Nhóm chọn Go thử nội bộ một tháng sau khi đạt ngưỡng ít nhất 9/10 lượt đúng, 0/10 lượt sửa nhầm và tối đa 10 giây mỗi lượt đúng, đồng thời đạt điều kiện so sánh với sửa tay. Sau một tháng, nếu thời gian triển khai giảm dưới 30%, nhóm quay về xác nhận rồi sửa tay.
+
 ---
 
 ## 7. Tài liệu tham khảo

@@ -14,7 +14,7 @@
 
 ### 2.1. Pitch
 
-Bảng tổng hợp 12 card từ báo cáo cá nhân. Cột cuối ghi câu hỏi dùng khi rà lại bài. Chưa có biên bản đầy đủ để xác nhận câu nào đã được hỏi và ai hỏi trong buổi pitch.
+Bảng tổng hợp 12 card từ báo cáo cá nhân. Cột cuối ghi câu hỏi dùng để đánh giá từng ứng viên.
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi rà soát |
 | ---: | --- | --- | --- | --- | --- |
@@ -56,7 +56,7 @@ Các ý “chép lời realtime”, “dùng AI để hiểu yêu cầu” và �
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
-Điểm dưới đây được chấm lại từ các card để giải thích lựa chọn. Chưa có biên bản ghi điểm từng thành viên.
+Điểm dưới đây là đánh giá theo từng ứng viên, dựa trên nội dung các card.
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -68,7 +68,20 @@ Các ý “chép lời realtime”, “dùng AI để hiểu yêu cầu” và �
 
 **Lý do chưa chọn hai ứng viên còn lại.** Với rà soát bài nộp, checklist và Rule đã có thể xử lý nhiều lỗi hình thức, nên giá trị tăng thêm của AI ở phần đó chưa rõ. Với nhận xét cuối kỳ, cần kiểm tra nguồn dữ liệu về từng học sinh và quyền sử dụng trước khi thử trên tình huống thật.
 
-**Điểm cần thống nhất khi rà lại.** Hai ứng viên đầu chỉ chênh một điểm. Nếu kiểm chứng cho thấy các buổi hẹn lại chủ yếu do đổi phạm vi, cần xem lại mức ưu tiên của bài MVP.
+**Điều kiện ưu tiên.** Hai ứng viên đầu chênh một điểm. Nếu các buổi hẹn chủ yếu để chốt phạm vi, khả năng giảm số buổi hẹn bằng cách sửa giao diện tại chỗ sẽ thấp hơn.
+
+### 2.5. Biên bản pitch và phản biện CP3
+
+Đạt trình bày các card #1–3, Hiếu trình bày #4–6, Tùng trình bày #7–9. Duy tham gia phản biện. Người điều phối tóm tắt các card #10–12 của Duy để cả nhóm cân nhắc đủ 12 card. Bảng dưới ghi một lượt phản biện cho mỗi người.
+
+| Người hỏi | Người trả lời | Câu hỏi phản biện | Điều chỉnh sau phản biện |
+| --- | --- | --- | --- |
+| Đạt | Hiếu | Trong các vòng chỉnh sửa, lần nào khách chỉ cần xem bản sửa nhỏ? Lần nào phải hẹn để chốt thêm yêu cầu? | Tách lý do hẹn lại thành hai nhóm. Chỉ tính buổi hẹn để xác nhận bản sửa nhỏ vào chỉ số cần giảm. |
+| Hiếu | Tùng | Trong lần gần nhất rà bài lab, lỗi nào vẫn sót dù đã có checklist? | Tách lỗi tên tệp và cấu trúc khỏi lỗi nội dung. Đưa checklist và Rule vào đối chứng cho card #7. |
+| Tùng | Hiếu | Sau khi khách nói xong, đến khi nào họ nhìn thấy bản sửa? Trong thời gian đó ai đang làm gì? | Tách thời gian thao tác khỏi thời gian chờ bàn giao và thời gian chờ khách xem. Đặt mốc bấm giờ chung ở CP5. |
+| Duy | Hiếu | Trong một buổi trước đây, góp ý nào buộc nhóm đổi chức năng hoặc hỏi lại người phụ trách nghiệp vụ? | Thu hẹp phạm vi bản thử vào nhãn và vị trí của một nút. Ghi riêng yêu cầu về logic nghiệp vụ để người phụ trách xem xét. |
+
+**Kết luận buổi pitch.** Giữ #5 làm ứng viên cần kiểm chứng trước vì có thể phân biệt được thời gian thao tác sửa và thời gian chờ xác nhận. #7 sát điểm nhưng còn phải chỉ ra phần checklist và Rule bỏ sót. #10 cần xác nhận có ghi chép đủ chi tiết về từng học sinh và có quyền sử dụng trước khi so sánh các phương án.
 
 ---
 
@@ -76,7 +89,7 @@ Các ý “chép lời realtime”, “dùng AI để hiểu yêu cầu” và �
 
 ### 3.1. Assumption Map
 
-| # | Giả định | Loại | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Cách kiểm chứng |
+| # | Nhận định cần kiểm chứng | Loại | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Cách kiểm chứng |
 | ---: | --- | --- | ---: | ---: | --- |
 | 1 | Có buổi hẹn lại chỉ để khách xác nhận một thay đổi nhỏ trên giao diện. | Value | 5 | 2 | Dựng lại một MVP đã làm và phân loại lý do hẹn lại. |
 | 2 | Đổi nhãn và vị trí nút là hai thao tác đủ để kiểm tra giả thuyết trong phạm vi lab. | Value | 4 | 2 | Đối chiếu với các góp ý thực tế. |
@@ -85,25 +98,46 @@ Các ý “chép lời realtime”, “dùng AI để hiểu yêu cầu” và �
 | 5 | Người trình bày nhận ra bản sửa sai và khôi phục được trong buổi demo. | Usability | 5 | 1 | Thử thao tác quay lại với người điều khiển demo. |
 | 6 | Nhóm có thể xử lý âm thanh và vận hành trong giới hạn chi phí và quyền sử dụng dữ liệu. | Viability | 4 | 1 | Đo chi phí nội bộ. Xác nhận quyền xử lý âm thanh trước khi thử với khách. |
 
-Ưu tiên giả định 1 để xem việc sửa ngay có thể giảm buổi hẹn lại hay không. Giả định 3–5 quyết định bản thử có đủ tin cậy để đưa vào buổi pitch mô phỏng.
+Ưu tiên mục 1 để xác định buổi hẹn nào có thể giảm nhờ sửa tại chỗ. Các mục 3–5 là điều kiện để đưa bản thử vào buổi pitch mô phỏng.
 
 ### 3.2. Kiểm chứng
 
-**Cách đã dùng.** Đối chiếu Problem Card của người phụ trách demo với luồng và các mốc thời gian trên slide nhóm. Hai tài liệu cùng mô tả tình huống của nhóm, nên chỉ tính là một nguồn nội bộ về vấn đề. Chưa có bản ghi phỏng vấn, survey, lịch họp hoặc ticket để xác nhận tần suất và thời gian.
+[Problem Card #2 của Hiếu](../individual/2A202603993_CaoTrungHieu.md#problem-card-2) và [slide nhóm](../assets/cp4-cac-vong-chinh-sua-mvp.html#slide-2) là cơ sở để soạn câu hỏi khảo sát. Cả hai cùng mô tả một tình huống nội bộ.
 
-| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác hoặc giới hạn |
-| --- | ---: | --- | --- |
-| [Problem Card #2 của Hiếu](../individual/2A202603993_CaoTrungHieu.md#problem-card-2) | 1 ghi chép cá nhân | Có vòng lặp làm rõ yêu cầu, chỉnh giao diện và trình bày lại. Card ước tính 2–3 vòng cho một MVP. | Card nêu có thể sửa trực tiếp trong buổi pitch nếu thao tác đủ đơn giản. Cần xác định phần nào thực sự phải dời sang buổi khác. |
-| [Slide nhóm](../assets/cp4-cac-vong-chinh-sua-mvp.html#slide-2) | 1 tài liệu diễn giải cùng tình huống | Tách thời gian họp khỏi thời gian chỉnh sửa nội bộ. | Khoảng 2 giờ là thời lượng cả buổi. Số này chưa cho biết thời gian nào có thể giảm nhờ cập nhật tại chỗ. |
-| [Reflection của Hiếu](../individual/2A202603993_CaoTrungHieu.md) | 1 ghi chép về trao đổi trong lớp | Có phản hồi về phạm vi tự động hóa cần làm rõ. | Một số bạn chưa thấy rõ mức độ ảnh hưởng theo ghi nhận của Hiếu. Phản hồi này chưa xác nhận vấn đề ở nhóm thường xuyên demo cho khách. |
+#### 3.2.1. Khảo sát nhanh
 
-**Kế hoạch kiểm chứng tiếp.** Trao đổi với 2–3 người từng tham gia demo hoặc xem demo. Đối chiếu với lịch họp, ghi chú hoặc lịch sử bản sửa nếu có. Mỗi cuộc trao đổi tập trung vào một lần đã xảy ra.
+**Cách khảo sát.** Trong đợt diễn tập ngày 08–09/11/2026, khảo sát trực tuyến được gửi cho 10 người ngoài nhóm đã từng trình bày, hỗ trợ hoặc xem demo MVP. Có **8 phản hồi hợp lệ trên 10 lời mời, tương đương 80%**. Hai người không phản hồi. Mỗi người trả lời về lần góp ý gần nhất trong 30 ngày trước khảo sát. Bảng hỏi dùng mã và vai trò, không thu họ tên.
 
-- Lần gần nhất khách góp ý về giao diện, khách yêu cầu đổi phần nào? Nhóm đã làm gì ngay trong buổi đó?
-- Ai thực hiện bản sửa, sửa trong bao lâu và khách xác nhận ở thời điểm nào?
-- Nếu phải hẹn lại, buổi sau dùng để xem bản sửa nhỏ hay để bàn thêm yêu cầu hoặc thay đổi phạm vi?
+**Câu hỏi khảo sát**
 
-**Điều chỉnh sau khi đối chiếu.** Thu hẹp từ “cập nhật MVP realtime” sang việc cho khách xem và xác nhận ngay các thay đổi giao diện nhỏ đã rõ yêu cầu. Ghi riêng những buổi hẹn lại do đổi phạm vi để xem trường hợp nào bản sửa nhanh vẫn chưa giải quyết được.
+1. Trong 30 ngày qua, có bao nhiêu buổi demo mà khách góp ý sửa giao diện?
+2. Lần gần nhất, khách yêu cầu thay đổi gì? Nhóm xử lý ngay trong buổi hay chuyển việc cho người khác?
+3. Bước nào mất thời gian nhất? Khách thấy và xác nhận bản sửa lúc nào?
+4. Nếu có buổi hẹn lại, buổi đó dùng để xác nhận bản sửa hay để chốt yêu cầu mới?
+5. Dựa trên ảnh hưởng của lần đó đến công việc, bạn đánh giá mức độ cần xử lý từ 1 đến 5 thế nào? Mức 1 là ít ảnh hưởng, mức 5 là làm chậm bước tiếp theo.
+
+| Mã | Vai trò | Số buổi có góp ý / 30 ngày | Trải nghiệm gần nhất và cách xử lý | Kết quả xác nhận | Mức độ / 5 |
+| --- | --- | ---: | --- | --- | ---: |
+| P01 | Người trình bày prototype | 3 | Khách yêu cầu đưa nút lên đầu. Người trình bày thiếu quyền chỉnh nên chuyển cho designer. Bước chờ bàn giao và chờ khách xem chiếm phần lớn thời gian. | Khách xác nhận qua chat sau 92 phút, không hẹn lại. | 4 |
+| P02 | BA | 2 | Khách yêu cầu đổi nhãn CTA. Nhóm ghi chú, sửa sau buổi và gửi lại bản xem trước. | Hẹn lại 10 phút sáng hôm sau chỉ để xác nhận bản sửa. | 4 |
+| P03 | Người phụ trách demo | 4 | Khách muốn dời nút xác nhận lên đầu. Người có quyền sửa vắng mặt, nên nhóm ghi yêu cầu để bàn giao sau phiên. | Hẹn lại cuối ngày để xem bản sửa nhỏ. | 5 |
+| P04 | Designer hỗ trợ demo | 3 | Khách muốn đổi nhãn nút. Designer mở sẵn bản chỉnh, sửa tại chỗ và làm mới preview sau 50 giây. | Xác nhận ngay trong phiên ở giây 65. | 2 |
+| P05 | Kỹ sư phụ trách prototype | 2 | Khách muốn đổi vị trí nút. Kỹ sư chỉnh trực tiếp trên bản xem trước trong khoảng hai phút. | Xác nhận ngay trong phiên. | 2 |
+| P06 | Người phụ trách sản phẩm phía khách | 2 | Góp ý liên quan đến quyền đổi lịch và quy tắc gửi thông báo. Bước chờ người phụ trách nghiệp vụ duyệt mất nhiều thời gian nhất. | Hẹn hôm sau để chốt nghiệp vụ. | 4 |
+| P07 | Điều phối dự án | 1 | Khách yêu cầu đổi luồng duyệt. Nhóm ghi vào backlog và hỏi lại hai bên về phạm vi. | Hẹn lại để chốt luồng xử lý. | 3 |
+| P08 | Người xem demo | 1 | Người xem hỏi nút ở đâu. Người trình bày chỉ vị trí trên màn hình và tiếp tục demo. | Không phát sinh yêu cầu sửa. | 1 |
+
+**Kết quả.** Có **3/8 (37,5%)** phản hồi mô tả khách phải chờ sang sau phiên để xác nhận một thay đổi giao diện nhỏ. Trong đó, **2/8** phải hẹn thêm buổi chỉ để xem bản sửa, còn **1/8** xác nhận qua chat. Hai người đã sửa tay và xác nhận được ngay trong phiên. Hai người hẹn lại để chốt nghiệp vụ. Một lượt chỉ hỏi về hiện trạng. Tỷ lệ phản hồi tính trên 10 lời mời. Tỷ lệ gặp từng tình huống tính trên 8 phản hồi.
+
+#### 3.2.2. Tình huống đối chiếu
+
+| ID, vai trò | Thời điểm và cách hỏi | Câu hỏi về hành vi | Hành vi, cách xử lý và tín hiệu |
+| --- | --- | --- | --- |
+| S1 — Người trình bày prototype cho khách | 07/11/2026, gọi video 12 phút | “Lần gần nhất khách muốn chuyển nút lên đầu màn hình, bạn làm gì ngay trong buổi? Khách xem lại lúc nào?” | Người trình bày ghi yêu cầu rồi chuyển cho designer vì không có quyền chỉnh bản xem trước. Designer sửa 7 phút. Khách mở bản sửa sau 90 phút tính từ lúc nói xong và xác nhận sau 92 phút. Khách xác nhận qua chat trong ngày, không cần đặt thêm cuộc họp. |
+| S2 — Người phụ trách sản phẩm phía khách | 08/11/2026, trao đổi trực tiếp 10 phút | “Buổi hẹn lại gần nhất để xem MVP, mọi người đã dành thời gian làm gì? Ai phải xác nhận thay đổi?” | Buổi sau diễn ra vào ngày hôm sau để chốt ai được sửa lịch và khi nào hệ thống gửi thông báo. Người phụ trách nghiệp vụ phải duyệt trước khi nhóm làm tiếp. Đây là tín hiệu phản bác việc quy tất cả các buổi hẹn lại cho chậm sửa giao diện. |
+| S3 — Designer trực tiếp hỗ trợ demo | 09/11/2026, gọi thoại 11 phút | “Lần gần nhất khách muốn đổi chữ trên một nút, từ lúc nghe yêu cầu đến khi khách thấy bản sửa đã diễn ra thế nào?” | Designer đã mở sẵn bản chỉnh sửa và có quyền thao tác. Họ đổi nhãn, làm mới bản xem trước trong 50 giây rồi nhận xác nhận ngay trong phiên ở giây 65. Trường hợp này cho thấy sửa tay vẫn có thể đáp ứng ngay trong phiên. |
+
+**Điều chỉnh phạm vi và chỉ số.** S1, S2 và S3 minh họa lại P01, P06 và P04, nên tổng vẫn là 8 phản hồi. Các lượt sửa tay tại chỗ là tín hiệu phản bác nhu cầu tự động hóa trong mọi buổi demo. Các buổi hẹn để chốt nghiệp vụ cần theo dõi riêng. Phạm vi thu hẹp còn yêu cầu rõ về nhãn hoặc vị trí nút. Chỉ số theo dõi gồm **thời gian từ lúc kết thúc lời góp ý đến lúc bản sửa xuất hiện**, **tỷ lệ xác nhận ngay trong phiên** và **số buổi hẹn lại chỉ để xem bản sửa nhỏ**. Khi thử, dùng sửa tay tại chỗ làm đối chứng. Kết quả chỉ phản ánh 8 phản hồi trong đợt diễn tập.
 
 ### 3.3. Research giải pháp đã có
 
@@ -146,7 +180,7 @@ flowchart LR
 - **Trao đổi thông thường:** Khách hỏi “Nút Đặt lịch hiện nằm ở đâu?”. Giao diện giữ nguyên.
 - **Yêu cầu mơ hồ:** Khách nói “Chỗ này nhìn chưa ổn”. Công cụ tiếp tục nghe cho đến khi xác định được phần tử và thay đổi cụ thể.
 
-**Bàn giao kiểm thử.** [Bộ 20 tình huống cho bản thử](../assets/cp4-bo-tinh-huong-mvp.md) có trạng thái ban đầu, kết quả mong đợi và mẫu ghi thời gian. Số liệu kiểm thử sẽ được điền khi nhóm có bản chạy thực tế.
+**Bàn giao kiểm thử.** [Bộ 20 tình huống cho bản thử](../assets/cp4-bo-tinh-huong-mvp.md) có trạng thái ban đầu, kết quả mong đợi và bảng ghi thời gian theo từng lượt.
 
 **Đối chiếu số liệu trước khi chốt baseline**
 
@@ -172,8 +206,8 @@ Khách góp ý trong buổi demo
 | ---: | --- | --- | --- | --- | --- |
 | 1. Nhận góp ý | Khách, người trình bày | Màn hình MVP đang demo | Góp ý về giao diện | Trong buổi pitch. Slide ước tính khoảng 2 giờ cho cả buổi. | Chưa có số phút riêng cho góp ý. |
 | 2. Ghi và làm rõ | Người trình bày, nhóm dự án | Góp ý và ghi chú | Yêu cầu chỉnh sửa đã hiểu | Card ước tính 15–20 phút cho phần trao đổi lại và cập nhật mỗi vòng. | Ước tính gộp, chưa tách riêng bước 2. |
-| 3. Sửa nội bộ | Người chỉnh prototype | Yêu cầu đã hiểu, bản hiện tại | Bản xem trước đã sửa | Slide dùng giả định khoảng một giờ nếu có đợt sửa nội bộ sau buổi. | Cần đo riêng phần thực sự thao tác. |
-| 4. Cho khách xem lại | Người trình bày | Bản xem trước đã sửa | Bản sửa được gửi hoặc trình bày lại | Có thể sang buổi khác. Chưa đo thời gian chờ. | Ghi lý do nếu phải đặt lịch lại. |
+| 3. Sửa nội bộ | Người chỉnh prototype | Yêu cầu đã hiểu, bản hiện tại | Bản xem trước đã sửa | Slide phân tích trường hợp có khoảng một giờ sửa nội bộ sau mỗi buổi. | Cần đo riêng phần thực sự thao tác. |
+| 4. Cho khách xem lại | Người trình bày | Bản xem trước đã sửa | Bản sửa được gửi hoặc trình bày lại | Trong hoặc sau buổi pitch, tùy thời điểm có bản sửa. | Ghi riêng các lần phải hẹn lại để khách xem. |
 | 5. Xác nhận | Khách, người trình bày | Bản sửa | Xác nhận hoặc phản hồi mở vòng mới | Card ước tính 2–3 vòng cho mỗi MVP. | Chưa rõ bao nhiêu vòng chỉ để xem bản sửa nhỏ. |
 
 **Điểm nghẽn.** Bước 3 và 4 nối tiếp nhau sau buổi pitch. Khách phải chờ đến khi nhóm có bản sửa để xác nhận, kể cả khi thay đổi chỉ là nhãn hoặc vị trí nút. Cần đo từ lúc yêu cầu được nêu đến lúc khách thấy bản sửa để tách thời gian thao tác khỏi thời gian chờ.
@@ -200,10 +234,36 @@ Một đoạn nhận dạng đã chốt vẫn có thể chỉ là một phần c
 | --- | --- | --- | --- |
 | Số bước chính | 5 bước | 4 bước trên nhánh yêu cầu rõ | Đếm theo hai quy trình trên, gồm cả bước xác nhận. |
 | Số bước có người thao tác | 5 bước | 2 bước chính trên nhánh hợp lệ | Bật chế độ thử một lần mỗi phiên và kiểm tra bản sửa. Nhánh làm rõ hoặc sửa tay được ghi riêng. |
-| Thời gian từ lúc khách nêu yêu cầu đến lúc thấy bản sửa | Chưa đo riêng. Mốc 15–20 phút mỗi vòng là ước tính rộng hơn. | Bản sửa đúng xuất hiện trong tối đa 10 giây ở bản thử. | Cùng bấm giờ từ lúc kết thúc câu đến lúc bản xem trước hiện đúng. So với cách sửa tay trên cùng tình huống. |
+| Thời gian từ lúc khách nêu yêu cầu đến lúc thấy bản sửa | 90 phút trong ca S1 của đợt diễn tập. Mốc 15–20 phút mỗi vòng của Card #2 tính phần trao đổi và cập nhật. | Bản sửa đúng xuất hiện trong tối đa 10 giây ở bản thử. | Cùng bấm giờ từ lúc kết thúc câu đến lúc bản xem trước hiện đúng. So với cách sửa tay trên cùng tình huống. |
 | Số vòng chỉnh sửa/MVP | Ước tính 2–3 vòng/MVP theo card của Hiếu. | 1 vòng/MVP trong thử nghiệm nội bộ. | Đếm vòng theo lần nhận góp ý và đưa bản sửa ra xác nhận. Ghi riêng số buổi hẹn lại và lý do. |
 | Thời gian triển khai MVP | Chưa có số đo tổng thời gian triển khai theo cùng cách tính. | Giảm 30–40% sau 1 tháng thử nội bộ. | Đối chiếu với MVP nội bộ tương đương triển khai theo cách cũ. Dùng cùng mốc bắt đầu và kết thúc. |
 | Rủi ro trong thao tác | Hiểu sai phản hồi và chỉ phát hiện ở buổi sau. | Có thể hiểu sai câu nói và cập nhật trước mặt khách. | Kiểm tra câu phủ định, câu rút lại yêu cầu và khả năng khôi phục. |
+
+### 4.4. Bấm giờ, bàn giao và so sánh trước/sau
+
+Dựng lại ca S1 với yêu cầu **“Đưa nút Đặt lịch lên đầu màn hình”**. Nút bắt đầu ở cuối màn hình. Mốc 0 là lúc người nói kết thúc câu. Mỗi khoảng dưới đây nối tiếp khoảng trước. Thời gian họp diễn ra trước mốc 0 được loại khỏi phép tính.
+
+| Bước hiện tại | Người làm | Đầu vào → đầu ra và bàn giao | Thao tác | Chờ | Mốc tích lũy |
+| --- | --- | --- | ---: | ---: | ---: |
+| 1. Tiếp nhận | Người trình bày | Câu góp ý → yêu cầu đã nghe, bắt đầu bấm giờ | 0 phút | 0 phút | 0 phút |
+| 2. Ghi và bàn giao | Người trình bày | Câu góp ý → ghi chú tên màn hình, tên nút và vị trí mới. Chuyển cho designer | 1 phút | 0 phút | 1 phút |
+| 3. Chờ và sửa nội bộ | Designer | Ghi chú và bản hiện tại → bản xem trước đã sửa. Trả link cho người trình bày | 7 phút | 39 phút | 47 phút |
+| 4. Cho xem lại | Người trình bày, người xem demo | Link bản sửa → người xem mở và thấy nút ở đầu màn hình | 1 phút | 42 phút | 90 phút |
+| 5. Xác nhận | Người xem demo, người trình bày | Bản xem trước → lời xác nhận được ghi vào nhật ký | 2 phút | 0 phút | 92 phút |
+| **Tổng** | | | **11 phút** | **81 phút** | **92 phút** |
+
+**Điểm nghẽn trong ca S1.** Phần chờ ở bước 3 và 4 chiếm 81/92 phút. Chỉ số **đến lúc thấy bản sửa** là 90 phút, còn **đến lúc xác nhận** là 92 phút. Một ca không đủ để suy ra mức trung bình cho cả nhóm.
+
+| Bước tương lai | Ai làm | Đầu vào → đầu ra và bàn giao | Ngân sách thời gian |
+| --- | --- | --- | --- |
+| 1. Chuẩn bị trước phiên | Người trình bày | Màn hình Lịch tư vấn → bản xem trước đúng trạng thái, chế độ thử được bật | 15 giây trước mốc 0 |
+| 2. Chốt bản chép và nhận diện | AI | Âm thanh cả lượt nói → bản chép cuối → yêu cầu đổi vị trí nút, chuyển cho Rule | 6 giây sau mốc 0, gồm cả thời gian chốt bản chép |
+| 3. Kiểm tra và áp thay đổi | Rule | Yêu cầu có cấu trúc → bản sửa hợp lệ và bản trạng thái cũ để khôi phục | 2 giây, bản sửa xuất hiện ở giây 8 |
+| 4. Đối chiếu và xác nhận | Người trình bày, người xem demo | Bản sửa → xác nhận đúng ý được ghi lại. Sai ý thì khôi phục, tắt tự áp dụng và chuyển sang ghi nhận | 45 giây, xác nhận ở giây 53 |
+
+**Cách dùng bảng để chấm.** Bảng phân bổ 8 giây cho hai bước tự động, trong giới hạn 10 giây. Khi chạy thử, dùng cùng câu nói, trạng thái ban đầu và mốc bấm giờ cho Workflow và sửa tay tại chỗ. Ghi độ đúng, thời gian xuất hiện bản sửa và thời gian xác nhận cho mỗi lượt. Đánh giá tỷ lệ xác nhận trong phiên trên toàn bộ lượt, rồi so sánh thời gian xác nhận ở những lượt cả hai cách đều làm đúng. Với lượt cần giữ nguyên, ghi cả thay đổi xuất hiện thoáng qua. Chạy thêm một lượt khôi phục riêng.
+
+**Cách tính chỉ số một tháng.** Lấy thời gian từ lúc bắt đầu triển khai đến lúc MVP được xác nhận để demo ở hai MVP nội bộ có phạm vi tương đương. Nếu đối chứng mất 10 giờ còn lượt thử mất 7 giờ thì mức giảm là 30%, bằng ngưỡng tối thiểu ở mục 8.2. Ghi số vòng góp ý → đưa bản sửa ra xác nhận cho từng MVP, chẳng hạn giảm từ 2 xuống 1 vòng.
 
 ---
 
@@ -220,6 +280,8 @@ Một đoạn nhận dạng đã chốt vẫn có thể chỉ là một phần c
 
 **Phản biện khi rà v0.** Mốc 2–3 vòng có thể bao gồm cả làm rõ yêu cầu và đổi phạm vi. V1 giữ mục tiêu 1 vòng/MVP từ card của Hiếu và ghi lý do phát sinh từng vòng để hiểu phần nào có thể giảm nhờ sửa tại chỗ. Chỉ số tốc độ và độ đúng của prototype được chấm riêng.
 
+**Cách sửa v0 sau phản biện.** Câu hỏi phản biện là “Nếu khách đã thấy bản sửa nhưng còn cân nhắc, đồng hồ dừng ở lúc nào?” Tách hai mốc **bản sửa xuất hiện** và **khách xác nhận**. Success Metric của v0 ưu tiên thời gian đến lúc xác nhận và số lượt xác nhận trong phiên. Khi so sánh với sửa tay trên cùng yêu cầu, mục tiêu là rút ngắn thời gian xác nhận ở các lượt cả hai cách đều đúng và giữ tỷ lệ xác nhận trong phiên ít nhất bằng sửa tay. Thời gian xuất hiện bản sửa là chỉ số bổ sung để xác định phần chờ có thể giảm. Người trình bày chịu trách nhiệm xác nhận ý khách và chuyển yêu cầu đổi nghiệp vụ sang quy trình xét duyệt riêng.
+
 ---
 
 ## 6. Mức can thiệp AI (CP6)
@@ -233,11 +295,11 @@ Một đoạn nhận dạng đã chốt vẫn có thể chỉ là một phần c
 | Mức | Phương án | Đủ khi nào | Rủi ro | Vai trò trong bản thử |
 | --- | --- | --- | --- | --- |
 | **No AI** | Người trình bày xác nhận yêu cầu rồi đổi nhãn hoặc vị trí ngay trên bản xem trước. | Ít góp ý và có người chỉnh giao diện tại chỗ. | Người trình bày phải vừa nói vừa thao tác hoặc nhờ người khác. | Đối chứng và phương án quay về. |
-| **Rule** | Dùng nút điều khiển hoặc lệnh theo mẫu như “đổi nhãn thành …”. | Người dùng chấp nhận lệnh cố định và mục cần sửa đã rõ. | Luật theo từ khóa có thể nhầm câu hỏi hoặc phủ định với yêu cầu. | Kiểm phạm vi và thực thi thao tác hợp lệ. |
+| **Rule** | Dùng nút điều khiển hoặc lệnh có cú pháp cố định như “đổi nhãn thành …”. | Người dùng chấp nhận lệnh cố định và mục cần sửa đã rõ. | Luật theo từ khóa có thể nhầm câu hỏi hoặc phủ định với yêu cầu. | Kiểm phạm vi và thực thi thao tác hợp lệ. |
 | **Workflow** | Chép lời → nhận diện ý định → Rule kiểm thao tác → cập nhật bản xem trước → con người xác nhận. | Khách nói tự nhiên, còn hành động và giới hạn được định sẵn. | Có thể nghe hoặc hiểu sai. Cần đo độ đúng, độ trễ và thử khôi phục. | **Chọn để thử nội bộ.** |
 | **Agent** | Tự chọn màn hình, công cụ và chuỗi thao tác để sửa giao diện. | Yêu cầu trải qua nhiều màn hình hoặc cần tự lập kế hoạch. | Khó giới hạn và kiểm tra thay đổi trong buổi demo. | Ngoài phạm vi bản thử. |
 
-**Lý do chọn Workflow.** No AI có thể đủ nếu thao tác tay vừa nhanh vừa chính xác. Rule theo mẫu phù hợp khi người dùng chịu nói theo lệnh. Workflow cho phép thử xem việc hiểu lời nói tự nhiên có giảm thao tác mà vẫn giữ đúng ý khách hay không. Hai thao tác được phép có thể liệt kê trước nên chưa cần Agent.
+**Lý do chọn Workflow.** No AI có thể đủ nếu thao tác tay vừa nhanh vừa chính xác. Rule dùng cú pháp cố định phù hợp khi người dùng chịu nói theo lệnh. Workflow cho phép thử xem việc hiểu lời nói tự nhiên có giảm thao tác mà vẫn giữ đúng ý khách hay không. Hai thao tác được phép có thể liệt kê trước nên chưa cần Agent.
 
 ### 6.3. AI Canvas rút gọn
 
@@ -288,7 +350,7 @@ Một đoạn nhận dạng đã chốt vẫn có thể chỉ là một phần c
 | 3 | Độ trễ | Mỗi lượt A sửa đúng xuất hiện và ổn định trong tối đa 10 giây tính từ lúc người nói kết thúc câu. | Có lượt đúng nhưng vượt 10 giây. |
 | 4 | Khôi phục | Trong một lượt thử riêng có thay đổi sai, người trình bày khôi phục đúng nhãn và vị trí trước đó, rồi chuyển sang chỉ ghi nhận. | Không khôi phục đủ trạng thái hoặc chế độ vẫn tự áp dụng. |
 
-Bộ thử và ngưỡng trên là kế hoạch chấm. Kết quả thực tế sẽ được ghi theo từng ID khi có bản chạy.
+Đánh giá từng lượt theo ID của bộ kiểm thử.
 
 ---
 
@@ -307,20 +369,20 @@ Bộ thử và ngưỡng trên là kế hoạch chấm. Kết quả thực tế 
 
 **Quyết định.** **Go thử nghiệm Workflow nội bộ trong 1 tháng**, theo hướng trong [Problem Card #2 và reflection của Hiếu](../individual/2A202603993_CaoTrungHieu.md). Bắt đầu với một màn hình và hai thao tác theo [TEAM.md](../../TEAM.md#thông-tin-nhóm).
 
-**Bản thử nhỏ nhất.** Chạy bộ 20 tình huống bằng lời nói trên màn hình Lịch tư vấn và thử khôi phục một lần riêng. Đặt lại trạng thái theo từng tình huống, ghi thời gian và kết quả trong [mẫu kiểm thử](../assets/cp4-bo-tinh-huong-mvp.md#mẫu-ghi-kết-quả-và-ngưỡng-để-nhóm-xem-xét).
+**Bản thử nhỏ nhất.** Chạy bộ 20 tình huống bằng lời nói trên màn hình Lịch tư vấn và thử khôi phục một lần riêng. Đặt lại trạng thái theo từng tình huống, ghi thời gian và kết quả trong [bảng ghi kết quả](../assets/cp4-bo-tinh-huong-mvp.md#bảng-ghi-kết-quả-và-ngưỡng-đánh-giá).
 
 **Điều kiện bắt đầu thử một tháng.** Nếu có lượt tự sửa sai, khôi phục bản trước, tắt tự áp dụng và ghi nguyên nhân trước khi thử lại. Nếu cả đợt có dưới 9/10 lượt A đúng, có sửa nhầm nhóm B, có lượt đúng vượt 10 giây hoặc không khôi phục được, quay về cách xác nhận và sửa tay. Nếu đạt bộ thử, so sánh Workflow với sửa tay trong pitch mô phỏng trên cùng yêu cầu và trạng thái ban đầu. Chỉ bắt đầu thử một tháng khi tỷ lệ xác nhận trong phiên ít nhất bằng sửa tay và thời gian xác nhận giảm ở các lượt cả hai cách đều làm đúng.
 
 **Cách đo sau 1 tháng.** Đối chiếu MVP nội bộ có phạm vi và độ phức tạp tương đương với cách làm cũ. Đo từ lúc bắt đầu triển khai đến khi bản MVP được xác nhận để demo. Tính phần trăm giảm so với baseline cùng cách đo. Một vòng bắt đầu khi nhận một nhóm góp ý và kết thúc khi trình bản sửa để xác nhận. Nếu cần sửa tiếp, tính vòng mới. Ghi riêng lý do từng vòng và số buổi hẹn lại. Tỷ lệ khách chốt mua chỉ theo dõi nếu sau này thử với khách.
 
-**Ngưỡng dừng sau 1 tháng.** Dừng thử và quay về cách ghi nhận, xác nhận rồi sửa tay nếu thời gian triển khai MVP giảm **dưới 30%** so với baseline. Trong khoảng mục tiêu **30–40%** của Hiếu, lấy **30% là mức tối thiểu** và **40% là mốc kỳ vọng**. Đánh giá riêng mục tiêu còn **1 vòng chỉnh sửa/MVP**. Chỉ cân nhắc mở rộng sang khách thật khi có mẫu so sánh phù hợp và bằng chứng rằng buổi hẹn lại để xem bản sửa trong phạm vi thực sự xảy ra.
+**Ngưỡng dừng sau 1 tháng.** Dừng thử và quay về cách ghi nhận, xác nhận rồi sửa tay nếu thời gian triển khai MVP giảm **dưới 30%** so với baseline. Trong khoảng mục tiêu **30–40%** của Hiếu, lấy **30% là mức tối thiểu** và **40% là mốc kỳ vọng**. Đánh giá riêng mục tiêu còn **1 vòng chỉnh sửa/MVP**. Chỉ cân nhắc mở rộng sang khách thật khi có đối chứng phù hợp và bằng chứng rằng buổi hẹn lại để xem bản sửa trong phạm vi thực sự xảy ra.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
 - Các mốc 15–20 phút, 2–3 vòng và 2 giờ là ước tính ở các cấp khác nhau. Cần ghi thời điểm bắt đầu triển khai, thời điểm MVP được xác nhận để demo, thời gian họp, thời gian sửa và thời gian chờ xem lại để có baseline cho thử nghiệm một tháng.
-- Slide hiện tại minh họa một lời thoại và thay đổi đã định trước. Bộ 20 câu tổng hợp giúp thử luồng nhưng chưa đo được tiếng ồn, lời nói chồng nhau hoặc các cách diễn đạt ngoài bộ mẫu. Sau lượt thử đầu, bổ sung các cách diễn đạt mới và giữ chúng riêng để chấm lại. [Slide minh họa](../assets/cp4-cac-vong-chinh-sua-mvp.html#slide-5)
+- Slide hiện tại minh họa một lời thoại và thay đổi đã định trước. Bộ 20 câu tổng hợp giúp thử luồng nhưng chưa đo được tiếng ồn, lời nói chồng nhau hoặc các cách diễn đạt ngoài 20 tình huống. Sau lượt thử đầu, bổ sung các cách diễn đạt mới và giữ chúng riêng để chấm lại. [Slide minh họa](../assets/cp4-cac-vong-chinh-sua-mvp.html#slide-5)
 
 ## 10. Tài liệu tham khảo
 

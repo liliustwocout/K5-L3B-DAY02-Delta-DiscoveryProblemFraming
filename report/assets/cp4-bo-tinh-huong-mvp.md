@@ -38,7 +38,7 @@
 | B09 | Đưa nút lên đầu… khoan, giữ nguyên giúp tôi. | Giữ nguyên. Người nói rút yêu cầu trong cùng lượt nói. |
 | B10 | Nút Đặt lịch để thế này là được rồi. | Giữ nguyên. Đây là nhận xét về trạng thái hiện tại. |
 
-## Mẫu ghi kết quả và ngưỡng để nhóm xem xét
+## Bảng ghi kết quả và ngưỡng đánh giá
 
 | ID | Thay đổi quan sát được | Số giây từ lúc nói xong | Đạt / Chưa đạt | Ghi chú |
 |---|---|---:|---|---|

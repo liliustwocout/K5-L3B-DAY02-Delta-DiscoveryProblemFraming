@@ -43,7 +43,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 ### Problem Card #1 — Đối chiếu hồ sơ HR
 
-Các sơ đồ dưới đây là bản dựng lại từ tình huống ở CP1. Số phút có nhãn **ước tính** là giả định để thảo luận, cần đối chiếu với lần thực hiện thật trước khi dùng làm baseline.
+Các sơ đồ dưới đây là bản dựng lại từ tình huống ở CP1. Nhãn **ước tính** phân biệt thời lượng từng bước với số quan sát được của cả đợt.
 
 | Trường | Nội dung |
 | --- | --- |
@@ -63,7 +63,7 @@ Quy trình nháp hiện tại:
 ```text
 1. Liệt kê hồ sơ cần kiểm tra [ước tính 30 phút]
 → 2. Tìm bản giấy và bản mềm tương ứng [ước tính 60 phút]
-→ 3. Đối chiếu từng cặp bản, ghi mục lệch hoặc thiếu [ước tính 180 phút, điểm nghẽn giả định]
+→ 3. Đối chiếu từng cặp bản, ghi mục lệch hoặc thiếu [ước tính 180 phút, bước tốn thời gian nhất theo ước tính]
 → 4. Bổ sung phần có thể xử lý, chuyển phần còn thiếu cho người phụ trách [ước tính 150 phút]
 → 5. Kiểm lại hồ sơ đã bổ sung và ghi tình trạng còn tồn [ước tính 60 phút]
 Mốc thực tế: khoảng 1 ngày cho cả đợt.
@@ -78,7 +78,7 @@ Mô hình thời gian: 480 phút nếu tạm quy ước 1 ngày làm việc là 
 | Actor | Người tự đăng ký và sắp lịch tham dự. |
 | Thời điểm / bối cảnh | Tuần đã đăng ký 4 sự kiện. |
 | Quy trình hiện tại (3–7 bước) | Xem thông tin sự kiện → đăng ký → lục lại xác nhận và kiểm tra giờ → so với lịch cá nhân để sắp xếp. Kênh lưu xác nhận cần kiểm tra lại. |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3, tra lại danh sách và giờ của 4 sự kiện, ước tính **12 phút**. Có thể bấm giờ khi dựng lại danh sách để kiểm tra giả định. |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3, tra lại danh sách và giờ của 4 sự kiện, ước tính **12 phút**. |
 | Impact (nếu không giải thì sao) | Không nhớ đủ lịch của 4 sự kiện, khiến việc sắp lịch khó hơn và có nguy cơ bỏ lỡ. |
 | Success metric (baseline → target) | Không nhớ đủ lịch của 4 sự kiện, chưa ghi được số lịch tra đúng → xác định đúng tên và giờ của **4/4 sự kiện** trong tối đa **5 phút** (mục tiêu thử). Đo bằng đồng hồ và đối chiếu với xác nhận đăng ký. |
 | Phương án không dùng AI | Ngay sau khi đăng ký, thêm sự kiện vào một lịch duy nhất và đặt nhắc giờ. |
@@ -91,7 +91,7 @@ Quy trình nháp hiện tại:
 1. Xem thông tin và chọn sự kiện muốn tham dự [ước tính 8 phút cho 4 sự kiện]
 → 2. Điền và gửi đăng ký [ước tính 8 phút cho 4 sự kiện]
 → 3. Khi cần sắp lịch, lục lại xác nhận hoặc trang sự kiện để tìm tên và giờ
-     [ước tính 12 phút cho 4 sự kiện, điểm nghẽn giả định]
+     [ước tính 12 phút cho 4 sự kiện, bước tốn thời gian nhất theo ước tính]
 → 4. So giờ sự kiện với lịch cá nhân và quyết định tham dự [ước tính 5 phút]
 Mốc thực tế: 4 sự kiện được đăng ký trong một tuần.
 Tổng thời gian thao tác ước tính: 33 phút, rải trong tuần.
@@ -108,7 +108,7 @@ Tổng thời gian thao tác ước tính: 33 phút, rải trong tuần.
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 4, chờ cập nhật sau phản hồi chưa đủ rõ. Đã ghi nhận khoảng 2 tháng chờ theo lịch. Thời gian trường trực tiếp xử lý câu hỏi chưa rõ. |
 | Impact (nếu không giải thì sao) | Sau khi hỏi, sinh viên vẫn thiếu thông tin để quyết định cần chuẩn bị gì tiếp theo. |
 | Success metric (baseline → target) | Khoảng 2 tháng đến thông báo kế tiếp → nhận cập nhật trong tối đa 10 ngày làm việc sau phản hồi ban đầu (mục tiêu thử). Tính từ dấu thời gian của phản hồi đến cập nhật. Ghi riêng cập nhật đó đã trả lời được câu hỏi hay mới hẹn ngày trả lời. |
-| Phương án không dùng AI | Chỉ định đầu mối phụ trách và trả lời theo mẫu gồm phần đã xác nhận, phần còn chờ và ngày cập nhật tiếp theo. |
+| Phương án không dùng AI | Chỉ định đầu mối phụ trách và trả lời theo cấu trúc gồm phần đã xác nhận, phần còn chờ và ngày cập nhật tiếp theo. |
 | Giả thuyết về AI (nếu có) | Để mở. Trước hết cần kiểm tra liệu câu hỏi bị kẹt do thiếu thông tin chính thức hay thiếu đầu mối cập nhật. |
 | Cảm nhận nhanh | No AI, thử làm rõ trách nhiệm và thời điểm cập nhật. |
 
@@ -150,7 +150,7 @@ Phần việc chính là research CP4 và ghi lại đề tài nhóm đã chọn
 | Nhận phản biện | Khi xem lại card HR, câu hỏi quan trọng là mốc khoảng một ngày tính riêng bước đối chiếu hay tính cả đợt. Phản biện của AI ở CP2 cũng chỉ ra điểm này. | Tách mốc khoảng một ngày đã ghi nhận khỏi 180 phút ước tính cho bước đối chiếu. Cần đo thêm thời gian tìm hồ sơ và bổ sung để kiểm tra điểm nghẽn. |
 | Gom cluster / cây OST | Cách gom khi xem lại các card gồm ba nhóm. Card HR thuộc nhóm đối chiếu thông tin. Card sự kiện và thực tập thuộc nhóm theo dõi lịch hoặc cập nhật. Card MVP của Hiếu thuộc nhóm làm rõ phản hồi và xác nhận bản sửa. | Outcome của card MVP là giảm số vòng chỉnh sửa. Ba nhu cầu trong OST là hiểu đúng ý khách, có bản sửa để xem ngay và xác nhận thay đổi trong lúc hai bên còn trao đổi. |
 | Chọn candidate problem | Ghi lại lựa chọn của nhóm trong [TEAM.md](../../TEAM.md) và [báo cáo nhóm](../team/group_report.md#24-chấm-điểm-shortlist-15). | Nhóm chọn Card #2 của Hiếu. Card này mô tả được vòng lặp chỉnh sửa và có thể thử riêng một thay đổi nhỏ trên một màn hình. Card HR còn thiếu số hồ sơ và thời gian từng bước. |
-| Kiểm chứng / research | Đối chiếu Google Cloud Speech-to-Text, Figma Make và JSON Patch. Tách 15–20 phút trao đổi và cập nhật mỗi vòng khỏi khoảng hai giờ của toàn buổi pitch và khoảng một giờ chỉnh sửa nội bộ giả định sau mỗi buổi. | [Mục 3.3](../team/group_report.md#33-research-giải-pháp-đã-có) ghi lại ba nguồn và câu hỏi cần thử. Công cụ có phân biệt được yêu cầu sửa với lời trao đổi bình thường đủ nhanh để cập nhật bản xem trước không? Hiện có đối chiếu tài liệu, chưa có số đo từ buổi pitch thật. |
+| Kiểm chứng / research | Đối chiếu Google Cloud Speech-to-Text, Figma Make và JSON Patch. Tách 15–20 phút trao đổi và cập nhật mỗi vòng khỏi khoảng hai giờ của toàn buổi pitch và khoảng một giờ chỉnh sửa nội bộ trong phương án tính sau mỗi buổi. | [Mục 3.3](../team/group_report.md#33-research-giải-pháp-đã-có) ghi lại ba nguồn và câu hỏi cần thử. Công cụ có phân biệt được yêu cầu sửa với lời trao đổi bình thường đủ nhanh để cập nhật bản xem trước không? Hiện có đối chiếu tài liệu, chưa có số đo từ buổi pitch thật. |
 | Quy trình nhóm | Chuẩn bị sơ đồ luồng chép lời, nhận diện yêu cầu và cập nhật bản xem trước, cùng [20 tình huống thử](../assets/cp4-bo-tinh-huong-mvp.md). | Nhóm có đầu vào để so sánh quy trình trước và sau. Trong bản thử, người trình bày có thể khôi phục bản xem trước và chuyển sang chỉ ghi nhận nếu công cụ sửa sai. |
 | Problem Statement | Từ ghi chú CP4, tập trung vào người phụ trách demo MVP và khoảng chờ từ lúc khách góp ý đến lúc thấy bản sửa. | Theo card của Hiếu, mục tiêu là từ 2–3 vòng xuống 1 vòng/MVP. Thời gian từ lúc nói xong đến lúc thấy bản sửa là chỉ số riêng của prototype. |
 | Mức can thiệp AI | Bàn giao bộ tình huống gồm 10 yêu cầu rõ và 10 câu cần giữ nguyên giao diện. Chọn Workflow với các bước cố định. | AI nhận diện ý định, Rule chỉ tự áp thay đổi nhỏ đã cho phép. Thay đổi lớn cần người phụ trách phân tích và duyệt trước khi xử lý riêng. |
@@ -170,7 +170,7 @@ Phần việc chính là research CP4 và ghi lại đề tài nhóm đã chọn
 | Checkpoint | Cách dùng AI | Phần hữu ích | Hạn chế | Điều chỉnh sau khi rà soát |
 | --- | --- | --- | --- | --- |
 | CP1 Scan | Diễn đạt lại 8 ý sau khi tự scan. | Chuẩn hóa Job Story, phân biệt lệch giữa hai bản hồ sơ với lệch thông tin giữa các ban, đánh dấu số liệu còn thiếu. | Bản đầu mô tả e-office chung chung, chưa thấy bước duyệt đơn bị tắc. | Bổ sung các mốc và tình huống từ trải nghiệm thật, thu hẹp ý e-office vào đơn bị kẹt ở bước chờ duyệt. |
-| CP2 Problem Card | Dựng và phản biện ba card từ các tình huống đã ghi ở CP1. | Tách mốc quan sát, giả định về điểm nghẽn và mục tiêu thử. | AI suy luận một số bước trung gian và ước tính thời lượng. | Đánh dấu riêng bước và số phút cần đối chiếu với lần thực hiện thật. |
+| CP2 Problem Card | Dựng và phản biện ba card từ các tình huống đã ghi ở CP1. | Tách mốc quan sát, bước nghi là điểm nghẽn và mục tiêu thử. | AI suy luận một số bước trung gian và ước tính thời lượng. | Đánh dấu riêng bước và số phút cần đối chiếu với lần thực hiện thật. |
 | CP4 Research | Dùng AI để hỗ trợ tìm và đối chiếu tài liệu cho đề tài MVP realtime. | Tách phần nhận giọng nói, chỉnh bản xem trước và áp thay đổi có cấu trúc. | Tài liệu riêng lẻ chưa trả lời được liệu cả luồng có chạy đủ nhanh trong buổi pitch. | Tách phần đã có tài liệu mô tả khỏi phần cần đo bằng prototype. Dùng luồng gửi prompt có chủ đích của Figma Make làm mốc so sánh. |
 | CP5 Quy trình | Dùng AI để rà soát luồng đề xuất từ sơ đồ CP4 và bộ tình huống. | Giúp tách bước AI hiểu câu nói, bước Rule kiểm phạm vi và bước người trình bày xử lý khi sai. | Một luồng chỉ có nhánh yêu cầu rõ sẽ bỏ qua câu phủ định hoặc câu mà khách rút lại giữa chừng. | Bổ sung nhánh giữ nguyên giao diện và cách khôi phục bản trước. |
 | CP5–6 Problem Statement | Dùng AI để rà lại sự liên hệ giữa điểm nghẽn và chỉ số đo. | Giúp tách thời gian phản hồi của prototype khỏi số vòng chỉnh sửa. | Bản xem trước hiện nhanh chưa cho biết thời gian triển khai MVP đã giảm bao nhiêu. | Đo riêng số vòng và thời gian triển khai ở cấp MVP, cùng độ trễ và độ đúng ở cấp prototype. |
@@ -198,7 +198,7 @@ Tên đề tài “cập nhật MVP realtime” đã gợi sẵn cách xử lý 
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
-Phần khó nhất khi chuẩn bị dữ kiện cho Problem Statement là chọn một baseline có thể đo lại. Số giờ họp cho biết tổng thời gian hai bên dành cho pitching, nhưng chưa cho biết bao nhiêu phút dành riêng cho việc làm rõ yêu cầu sửa giao diện. Vì vậy, cần ghi riêng thời gian họp, thời gian chỉnh sửa nội bộ và số buổi hẹn lại để xem bản sửa. Mốc 6–9 giờ mỗi MVP vẫn là ước tính phụ thuộc vào giả định có thêm khoảng một giờ chỉnh sửa sau mỗi buổi.
+Phần khó nhất khi chuẩn bị dữ kiện cho Problem Statement là chọn một baseline có thể đo lại. Số giờ họp cho biết tổng thời gian hai bên dành cho pitching, nhưng chưa cho biết bao nhiêu phút dành riêng cho việc làm rõ yêu cầu sửa giao diện. Vì vậy, cần ghi riêng thời gian họp, thời gian chỉnh sửa nội bộ và số buổi hẹn lại để xem bản sửa. Mốc 6–9 giờ mỗi MVP vẫn là ước tính áp dụng nếu có thêm khoảng một giờ chỉnh sửa sau mỗi buổi.
 
 **6.6. Điều sẽ thay đổi nếu làm lại**
 
