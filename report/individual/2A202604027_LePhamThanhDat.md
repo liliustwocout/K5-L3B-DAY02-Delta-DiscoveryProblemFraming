@@ -215,5 +215,3 @@ Khi khách góp ý trong buổi pitch, nhóm thường phải sửa MVP sau bu�
 - Google Cloud. [Chép lời từ âm thanh truyền trực tiếp](https://docs.cloud.google.com/speech-to-text/docs/streaming-recognize) và [phân biệt kết quả tạm thời với kết quả cuối](https://docs.cloud.google.com/speech-to-text/docs/v1/speech-to-text-requests).
 - Figma Learn. [Chỉnh sửa tệp Figma Make](https://help.figma.com/hc/en-us/articles/42009840449175-Edit-a-Figma-Make-file) và [câu hỏi thường gặp về Figma Make](https://help.figma.com/hc/en-us/articles/31722591905559-Figma-Make-FAQs).
 - IETF. [RFC 6902 — JSON Patch](https://www.rfc-editor.org/rfc/rfc6902.html#section-4).
-- Nhóm Delta. [Báo cáo nhóm, mục 3.3](../team/group_report.md#33-research-giải-pháp-đã-có) và [bộ 20 tình huống kiểm thử MVP realtime](../assets/cp4-bo-tinh-huong-mvp.md).
-- Cao Trung Hiếu. [Problem Card #2 về các vòng chỉnh sửa MVP](2A202603993_CaoTrungHieu.md#problem-card-2). Nhóm Delta. [Slide Vấn đề và quy trình hiện tại](../assets/cp4-cac-vong-chinh-sua-mvp.html#slide-2).
