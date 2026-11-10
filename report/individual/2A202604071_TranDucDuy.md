@@ -142,16 +142,11 @@ HIỆN TẠI — 4 lớp × 40 HS = 160 điểm / đợt, 960 đầu điểm / k
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Không thuyết trình | - |
+| Phản biện bài của bạn khác |  Hỏi nhóm Malto khi họ thuyết trình: "Nếu biết con vật nào là nguyên nhân nhưng không biết chủ của nó thì sao?" |  Nhóm bạn trả lời: sẽ trang bị cho thú cưng trong khu dân cư vòng cổ có chip hoặc ghi thông tin chủ. |
+| Nhận phản biện | Câu hỏi tôi nhận được: Nhóm Delta nhận câu hỏi từ nhóm Malto : "Nếu khách hàng yêu cầu sửa chức năng phức tạp mà Agent không làm nhanh được để khách xem luôn thì sao?" Hiếu trả lời: Agent chỉ sửa MVP để khách xem nhanh. | Giúp làm rõ giới hạn phạm vi xử lý của giải pháp trong bài nhóm |
+| Quy trình nhóm | Đưa ra một số phản biện | Giúp làm tránh một số rủi ro với dữ liệu dự án có thể xảy ra |
+
 
 ---
 
@@ -161,10 +156,10 @@ HIỆN TẠI — 4 lớp × 40 HS = 160 điểm / đợt, 960 đầu điểm / k
 |---|---|---|---|---|
 | CP1 Scan | Sau khi tự scan 4 ý (dòng 1–4), dùng Claude để gợi ý thêm, | Gợi ý phần chưa nghĩ tới | Số liệu trong các gợi ý chỉ là ví dụ minh họa, không dùng được trực tiếp | Ban đầu bỏ ý "phụ huynh hỏi qua Zalo", sau khi hỏi GV thì thêm lại (dòng 7) vì thực tế GV trao đổi với phụ huynh qua Zalo về kết quả học tập nhiều. Với cột "Dấu hiệu thật": bỏ số minh họa của AI, đối chiếu với văn bản của Bộ GD&ĐT [1]–[5]; số thời gian và số lỗi (5 lần nhập sai, 3 buổi tối, 4 giờ/đề, 4 phút/bài, 50 phút/bài) là ước lượng, **chưa có nguồn kiểm chứng và chưa phỏng vấn GV** |
 | CP2 Problem Card | Dùng Claude để soạn nháp bảng top 3, đồng thời phản biện card | Gợi ý cách xếp hạng theo tiêu chí của worksheet; chỉ ra điểm yếu (thiếu dữ liệu về thái độ HS, mới hỏi 1 GV, rủi ro bảo mật dữ liệu HS, khả năng chỉ cần import Excel) | Bản nháp đầu có quy trình từng bước chưa kiểm chứng và một mục tiêu chất lượng "≥ 90%" không có baseline | Bỏ mục tiêu chất lượng không có baseline; các số chưa có ghi rõ "chưa đo". Bổ sung actor và số liệu khung theo văn bản của Bộ GD&ĐT [1]–[5] và boundary bảo vệ dữ liệu trẻ em [6]; số thời gian, số lỗi ghi rõ "ước lượng"; quy trình từng bước của cả 3 card **chưa kiểm chứng với GV thật** |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP4 Research | Nhờ AI gợi ý các lỗ hổng bảo mật có thể xảy ra | Giúp chỉ ra một số lỗ hổng ít bị để ý | Chưa đưa ra rõ phương án giải quyết hoàn toàn | Lỗ hổng có thể bỏ qua nên chỉ lưu ý và tìm cách cải thiện sau |
+| CP5 Quy trình | Giải thích rõ hơn quy trình của nhóm | Giải thích rất chi tiết| Không có | Tôi dùng để hiểu rõ quy trình hơn, không sửa gì |
+| CP5–6 Problem Statement | Không dùng AI | Không dùng AI | Không dùng AI | Không dùng AI |
+| CP6 Mức can thiệp / quyết định | Nhờ AI hỗ trợ câu hỏi phản biện |Từ ý tưởng của tôi đưa ra được câu hỏi phản biện mạch lạc| Tôi hỏi câu trả lời thì chưa trả lời chính xác | Phản biện cùng nhóm |
 
 ---
 
@@ -173,19 +168,25 @@ HIỆN TẠI — 4 lớp × 40 HS = 160 điểm / đợt, 960 đầu điểm / k
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
+- Khi lắng nghe các bạn trình bày, tôi mở rộng được góc nhìn sang nhiều lĩnh vực khác nhau ngoài bối cảnh giáo dục mà mình đã chọn. Tôi học được cách các nhóm khác quan sát công việc thực tế, định lượng nỗi đau bằng con số cụ thể và bóc tách quy trình để tìm đúng điểm nghẽn, từ đó nhìn lại và cải thiện cách đặt vấn đề của bản thân.
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
-
+- Nhóm tôi có rơi vào bẫy "solution-first" ở giai đoạn đầu khi muốn áp dụng ngay một AI Agent tự động sửa toàn bộ giao diện sản phẩm cho khách hàng. Khi bị đặt câu hỏi phản biện và trao đổi lại cùng AI, cả nhóm mới nhận ra mình chưa làm rõ điểm nghẽn thực sự nằm ở đâu. Chúng tôi đã dừng lại để vẽ chi tiết từng bước của quy trình hiện tại, xác định bước tốn thời gian nhất là khâu họp chốt thay đổi kéo dài 2 tiếng mỗi ngày, rồi mới điều chỉnh giải pháp về mức vừa đủ.
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-
+- Có, tôi đã thay đổi hẳn suy nghĩ sau phần phản biện. Ban đầu ở bài toán nhập điểm lên hệ thống trường (Card #3), tôi định dùng AI để đọc và tổng hợp điểm tự động. Tuy nhiên, sau khi nhận phản biện, tôi nhận ra nhiều việc không nhất thiết phải lạm dụng AI: nếu giáo viên nhập điểm vào file Excel theo mẫu rồi import thẳng lên hệ thống (hoặc dùng quy tắc kiểm tra cơ bản) thì đã giải quyết triệt để lỗi nhập sai mà tốn ít chi phí, an toàn hơn rất nhiều.
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-
+- Tôi không quá bất ngờ về mặt quy trình chung vì đã tìm hiểu trước các văn bản quy định của ngành, nhưng có một chi tiết thực tế làm tôi chú ý khi hỏi chuyện giáo viên: ban đầu tôi định bỏ qua việc phụ huynh nhắn tin hỏi thăm vì nghĩ giáo viên ít trao đổi riêng, nhưng thực tế giáo viên lại nhận và trả lời tin nhắn Zalo về kết quả học tập của học sinh rất thường xuyên.
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
-
+- Điều khó nhất đối với tôi là thực hiện kỹ thuật 5 Whys để đào sâu tìm ra nguyên nhân gốc rễ. Nếu không hỏi đủ sâu, người viết rất dễ dừng lại ở bề nổi của triệu chứng hoặc đổ lỗi cho yếu tố con người làm chậm, dẫn đến việc xác định sai điểm nghẽn và chọn lệch mức độ can thiệp của công nghệ.
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-
+- Nếu làm lại từ đầu, tôi sẽ thay đổi tư duy sử dụng AI: chỉ dùng AI như công cụ gợi ý và phản biện chứ tuyệt đối không lạm dụng hay lấy số liệu giả định của AI làm dữ liệu thật, đồng thời dành thời gian bấm giờ, khảo sát người dùng thực tế sớm hơn. Khi làm việc nhóm, tôi sẽ phản biện quyết liệt hơn ở khâu kiểm chứng các con số baseline và đặt câu hỏi kỹ hơn về rủi ro bảo mật dữ liệu dự án cũng như giới hạn kỹ thuật khi khách hàng yêu cầu thay đổi các chức năng phức tạp ngay trong cuộc họp. 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+- Problem: Đội làm sản phẩm khi làm việc và trình bày bản nháp với khách hàng  phải mất tới 2–3 vòng chỉnh sửa cho mỗi MVP và tốn trung bình 2 tiếng chỉ để họp bàn đi bàn lại.
+- Quy trình: Khách hàng đưa đề xuất -> Họp chốt thay đổi -> Thiết kế lại giao diện/luồng -> Trình bày lại vào một ngày khác.
+- Bottleneck: Một bước cụ thể làm chậm cả quy trình -> Bước họp chốt thay đổi có thể lặp lại, 2 tiếng mỗi ngày kéo dài thời gian sang dự án mới.
+- Metric: Giảm số vòng lặp từ 2–3 vòng/MVP  xuống còn 1 vòng/MVP, đo lường qua số lần phải hẹn họp lại và tỷ lệ khách hàng chốt mua MVP thành công.
+- Boundary: Đối với các chức năng lớn, AI không được tự ý thiết kế lại màn hình mà chỉ trích xuất yêu cầu từ nội dung cuộc họp, nhân sự phụ trách bắt buộc phải kiểm tra và duyệt mọi thay đổi trước khi xuất bản cho khách xem.
+- Mức can thiệp: Workflow -> AI tham gia vào luồng để lắng nghe cuộc họp và đồng thời tinh chỉnh MVP trực tiếp theo mức độ thay đổi
+- Quyết định: Go -> Triển khai thử nghiệm ngay cho quy trình pitching sản phẩm nội bộ trong công ty; nếu sau 1 tháng mà tổng thời gian triển khai sản phẩm không giảm đạt mức 30–40% thì sẽ dừng dự án.
 ---
 
 ## 7. Tài liệu tham khảo
