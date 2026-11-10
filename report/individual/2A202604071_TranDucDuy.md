@@ -191,13 +191,13 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
-- Khi khách góp ý trong buổi demo MVP, nhóm có thể phải sửa sau buổi rồi chờ khách xác nhận.
-- Quy trình hiện tại đi từ ghi nhận yêu cầu, làm rõ, sửa nội bộ, cho khách xem đến xác nhận bản sửa.
-- Điểm nghẽn là khoảng chờ giữa lúc khách góp ý và lúc thấy bản sửa, kể cả với thay đổi nhỏ.
-- Nhóm theo dõi số vòng chỉnh sửa và thời gian triển khai. Mục tiêu là từ khoảng 2–3 vòng xuống 1 vòng/MVP và giảm 30–40% thời gian triển khai so với cách cũ.
-- Bản thử chỉ đổi nhãn hoặc vị trí nút Đặt lịch trên bản xem trước màn hình Lịch tư vấn. Người trình bày kiểm tra, khôi phục nếu sai và chuyển yêu cầu nghiệp vụ cho người có trách nhiệm.
-- Nhóm chọn Workflow để AI nhận diện yêu cầu và Rule chỉ áp thay đổi hợp lệ.
-- Quyết định là Go thử nội bộ một tháng sau khi đạt kiểm tra kỹ thuật và so sánh với sửa tay. Nếu mức giảm thời gian triển khai dưới 30%, nhóm dừng thử và quay về xác nhận rồi sửa tay.
+- Problem: Khi khách góp ý trong buổi demo MVP, nhóm có thể phải sửa sau buổi rồi chờ khách xác nhận.
+- Quy trình: Quy trình hiện tại đi từ ghi nhận yêu cầu, làm rõ, sửa nội bộ, cho khách xem đến xác nhận bản sửa.
+- Bottleneck: Điểm nghẽn là khoảng chờ giữa lúc khách góp ý và lúc thấy bản sửa, kể cả với thay đổi nhỏ.
+- Metric: Nhóm theo dõi số vòng chỉnh sửa và thời gian triển khai. Mục tiêu là từ khoảng 2–3 vòng xuống 1 vòng/MVP và giảm 30–40% thời gian triển khai so với cách cũ.
+- Boundary: Bản thử chỉ đổi nhãn hoặc vị trí nút Đặt lịch trên bản xem trước màn hình Lịch tư vấn. Người trình bày kiểm tra, khôi phục nếu sai và chuyển yêu cầu nghiệp vụ cho người có trách nhiệm.
+- Mức can thiệp: Nhóm chọn Workflow để AI nhận diện yêu cầu và Rule chỉ áp thay đổi hợp lệ.
+- Quyết định: Quyết định là Go thử nội bộ một tháng sau khi đạt kiểm tra kỹ thuật và so sánh với sửa tay. Nếu mức giảm thời gian triển khai dưới 30%, nhóm dừng thử và quay về xác nhận rồi sửa tay.
 
 ---
 
