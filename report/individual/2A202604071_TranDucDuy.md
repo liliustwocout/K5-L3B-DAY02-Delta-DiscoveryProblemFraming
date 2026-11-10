@@ -169,16 +169,26 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 - Khi lắng nghe các bạn trình bày, tôi mở rộng được góc nhìn sang nhiều lĩnh vực khác nhau ngoài bối cảnh giáo dục mà mình đã chọn. Tôi học được cách các nhóm khác quan sát công việc thực tế, định lượng nỗi đau bằng con số cụ thể và bóc tách quy trình để tìm đúng điểm nghẽn, từ đó nhìn lại và cải thiện cách đặt vấn đề của bản thân.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 - Nhóm tôi có rơi vào bẫy "solution-first" ở giai đoạn đầu khi muốn áp dụng ngay một AI Agent tự động sửa toàn bộ giao diện sản phẩm cho khách hàng. Khi bị đặt câu hỏi phản biện và trao đổi lại cùng AI, cả nhóm mới nhận ra mình chưa làm rõ điểm nghẽn thực sự nằm ở đâu. Chúng tôi đã dừng lại để vẽ chi tiết từng bước của quy trình hiện tại, xác định bước tốn thời gian nhất là khoảng chờ từ khi khách góp ý đến khi khách xem bản sửa, rồi mới điều chỉnh giải pháp về mức vừa đủ.
+
+
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 - Có, tôi đã thay đổi hẳn suy nghĩ sau phần phản biện. Ban đầu ở bài toán nhập điểm lên hệ thống trường (Card #3), tôi định dùng AI để đọc và tổng hợp điểm tự động. Tuy nhiên, sau khi nhận phản biện, tôi nhận ra nhiều việc không nhất thiết phải lạm dụng AI: nếu giáo viên nhập điểm vào file Excel theo định dạng nhập liệu rồi import thẳng lên hệ thống (hoặc dùng quy tắc kiểm tra cơ bản) thì đã giải quyết triệt để lỗi nhập sai mà tốn ít chi phí, an toàn hơn rất nhiều.
+
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 - Tôi không quá bất ngờ về mặt quy trình chung vì đã tìm hiểu trước các văn bản quy định của ngành, nhưng có một chi tiết thực tế làm tôi chú ý khi hỏi chuyện giáo viên: ban đầu tôi định bỏ qua việc phụ huynh nhắn tin hỏi thăm vì nghĩ giáo viên ít trao đổi riêng, nhưng thực tế giáo viên lại nhận và trả lời tin nhắn Zalo về kết quả học tập của học sinh rất thường xuyên.
+
+
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 - Điều khó nhất đối với tôi là thực hiện kỹ thuật 5 Whys để đào sâu tìm ra nguyên nhân gốc rễ. Nếu không hỏi đủ sâu, người viết rất dễ dừng lại ở bề nổi của triệu chứng hoặc đổ lỗi cho yếu tố con người làm chậm, dẫn đến việc xác định sai điểm nghẽn và chọn lệch mức độ can thiệp của công nghệ.
+
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 - Nếu làm lại từ đầu, tôi sẽ thay đổi tư duy sử dụng AI: chỉ dùng AI như công cụ gợi ý và phản biện chứ tuyệt đối không lạm dụng hay lấy số liệu do AI suy ra làm dữ liệu thật, đồng thời dành thời gian bấm giờ, khảo sát người dùng thực tế sớm hơn. Khi làm việc nhóm, tôi sẽ phản biện quyết liệt hơn ở khâu kiểm chứng các con số baseline và đặt câu hỏi kỹ hơn về rủi ro bảo mật dữ liệu dự án cũng như giới hạn kỹ thuật khi khách hàng yêu cầu thay đổi các chức năng phức tạp ngay trong cuộc họp.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
 - Khi khách góp ý trong buổi demo MVP, nhóm có thể phải sửa sau buổi rồi chờ khách xác nhận.
