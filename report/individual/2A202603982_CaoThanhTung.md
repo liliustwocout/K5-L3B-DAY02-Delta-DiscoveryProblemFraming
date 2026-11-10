@@ -152,16 +152,16 @@ HIỆN TẠI — Tổng thời gian: ~12 phút/lần tìm
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Tham gia tạo problem card và thảo luận với thành viên trong nhóm | Problem card tốt nhất được chọn |
+| Phản biện bài của bạn khác | Đặt câu hỏi về độ trễ của ai cho problem card được chọn | Nội dung của problem card được bổ sung |
+| Nhận phản biện | Được nhận xét về khả năng thu thập thông tin từ nhiều nguồn nội dung của hệ thống | Xem xét giải pháp về cách thu thập thông tin từ nhiều nguồn |
+| Gom cluster / cây OST | Thảo luận với các thành viên về các problem card của team để gom cluster | Các problem card với nội dung tương tự được gom thành 1 cụm |
+| Chọn candidate problem | Thảo luận với team để chọn ra một candidate problem tiêu biểu nhất | Problem card về tự động sửa mvp khi trao đổi với khách hàng được chọn |
+| Kiểm chứng / research | tham khảo các ý tưởng và sản phẩm tương tự sẵn có | thu thập được list các ý tưởng tương tự |
+| Quy trình nhóm | Tham gia vào quy trình nhóm được xây dựng | Kết quả hoạt động nhóm được tối ưu |
+| Problem Statement | Đóng góp ý kiến cho problem | Ý kiến về problem chung được ghi nhận |
+| Mức can thiệp AI | Dùng ai để đưa gợi ý quyết định chọn candidate problem | Ảnh hưởng đến quyết định chọn candidate problem |
+| Quyết định | Tham gia chốt problem và nội dung cho problem được chọn | Cải thiện nội dung của problem |
 
 ---
 
@@ -169,12 +169,12 @@ HIỆN TẠI — Tổng thời gian: ~12 phút/lần tìm
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Nhờ AI tách các problem tự scan qua các lăng kính khác nhau | Gán các problem với các lăng kính khác nhau | x | Review lại các lăng kính được gán đã đúng chưa |
+| CP2 Problem Card | Nhờ AI phản biện top 3 mà tôi đã chọn | Một số problem tôi không chọn trong top 3 được để xuất | x | Cùng với ý kiến của AI, chọn lại top 3 problem |
+| CP4 Research | Nhờ AI tìm hiểu giải pháp sẵn có | Cho tôi view tổng quan cho solution của problem | Một số giải pháp của AI chỉ ra không thực sự tồn tại | Tham khảo các solution tốt cho problem của mình |
+| CP5 Quy trình | x | x | x | x |
+| CP5–6 Problem Statement | Nhờ AI hỗ trợ xây dựng nội dung trình bày | Xây dựng nội dung nhanh | Còn một số phần thiếu/ chưa hợp lý | Tôi sửa lại nội dung theo ý mình |
+| CP6 Mức can thiệp / quyết định | x | x | x | x |
 
 ---
 
@@ -184,18 +184,33 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+- Với background khác nhau thì mọi người sẽ có các problem khác nhau, điểm chung là các vấn đề đều được xây dựng solution chi tiết bám sát painpoint thật mọi người gặp phải
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+- Có, khi đó nhóm thảo luận với nhau về tính khả thi của đề tài và các giải pháp đã có
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+- Tôi nhận được góp ý và đề xuất của các thành viên, từ đó xây dựng được nội dung problem và giải pháp tốt hơn.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+- Điều làm tôi bất ngờ là hầu hết các problem đều đã có các giải pháp được xây dựng.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+- Điều khó nhất khi xây dựng problem statement với tôi là phân tích vấn đề, thường bị cuốn vào phần xây dựng giải pháp
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+
+- Tôi sẽ phản biện nhóm mạnh hơn ở vấn đề họ gặp thực tế
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
+- Bài toán của nhóm tôi giải quyết nỗi đau của các nhóm phát triển khi đi pitching MVP với khách hàng: mỗi lần khách góp ý chỉnh sửa giao diện, nhóm không thể sửa ngay trong buổi họp mà phải tốn 2–3 ngày họp nội bộ và hẹn thêm buổi khác để trình bày lại.
+- Quy trình hiện tại gồm 4 bước từ lắng nghe góp ý, họp thống nhất, thiết kế lại giao diện cho đến hẹn gặp lại; trong đó bước họp chốt thay đổi và chờ đợi buổi họp tiếp theo là điểm nghẽn tốn nhiều ngày nhất. Mục tiêu đo lường thành công là giảm số vòng chỉnh sửa từ 2–3 vòng xuống còn tối đa 1 vòng/MVP và rút ngắn thời gian chốt giao diện với khách hàng ngay trong hoặc ngay sau buổi họp. Ranh giới được thiết lập rất chặt: AI chỉ được phép gợi ý và áp dụng các thay đổi giao diện nhỏ (như màu sắc, vị trí nút, component có sẵn), tuyệt đối không tự ý thay đổi cấu trúc luồng người dùng hay logic nghiệp vụ lớn nếu chưa có sự phê duyệt của Product Manager.
+- Nhóm chọn mức can thiệp là Workflow (kết hợp Speech-to-Text trích xuất ý kiến khách, Rule phân loại mức độ thay đổi và AI hỗ trợ cập nhật giao diện trực tiếp), vì các bước xử lý rất định sẵn và không giao cho Agent quyền tự quyết. Quyết định cuối cùng là Go (thử nghiệm phạm vi nhỏ) trên các dự án nội bộ; ngưỡng dừng là nếu sau 1 tháng thử nghiệm mà thời gian hoàn thiện MVP không giảm được ít nhất 30–40% hoặc tỷ lệ chỉnh sửa sai giao diện quá 20% thì nhóm sẽ dừng lại và quay về quy trình ghi nhận biên bản họp thủ công.
 ---
 
 ## 7. Tài liệu tham khảo
