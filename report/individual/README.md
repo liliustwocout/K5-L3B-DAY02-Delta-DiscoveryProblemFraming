@@ -8,4 +8,4 @@ report/individual/MSSV_HoTen.md
 
 Ví dụ: `report/individual/20241234_NguyenVanAn.md`.
 
-Mỗi thành viên một file trong thư mục này, trên repo chung của nhóm. File chứa phần **cá nhân** của bài: CP1 (scan), CP2 (top 3 Problem Cards), CP7 (reflection) và nhật ký tham gia nhóm. Copy template `MSSV_HoTen.md` thành file mới của bạn; giữ template cho đến khi mọi người đã có file riêng.
+Mỗi thành viên có một file trong thư mục này. Báo cáo gồm CP1 (scan), CP2 (top 3 Problem Cards), CP7 (reflection) và nhật ký tham gia nhóm. Xem [worksheet](../../docs/01-worksheet.md) để đối chiếu các mục cần điền.

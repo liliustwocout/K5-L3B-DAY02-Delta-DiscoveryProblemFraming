@@ -182,21 +182,15 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 - Nếu làm lại, tôi sẽ cố gắng để raise ý tưởng về xây dựng thương hiệu cá nhân bằng AI, đây là problem của riêng tôi nên chưa có nhiều thời gian kiểm nghiệm lắm, tức là số liệu chưa cụ thể nên tôi chưa làm. Tôi sẽ phản biện mạnh hơn ở việc đánh vào việc nhu cầu xây dựng thương hiệu cá nhân, đây là nhu cầu thiết thực khi mà giờ ai cũng thích làm creator, ngoài ra nhà tuyển dụng cũng muốn ứng viên có cách nào đó show off được toàn bộ kỹ năng của mình
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-- Đại loại bài hôm nay là về Design Thinking giúp chúng ta cụ thể hóa được chain/chuỗi suy nghĩ của bản thân khi bắt đầu tiếp cận vào việc "muốn tạo ra thứ gì đó tốt". Để chain hóa được chúng ta cần đi theo:
-+ Problem: Pain thật, có cactor, tình huống và con số thống kê
--> Mỗi lần khách đề xuất chỉnh sửa MVP, tôi phải họp lại với team rồi trình bày ở buổi khác, lặp 2-3 ngày
-+ Quy trình: Các bước con người đang làm để xong việc, có số phút
--> Khách đề xuất → họp chốt thay đổi → thiết kế lại → trình bày lại vào ngày khác
-+ Bottleneck: Một bước cụ thể làm chậm cả quy trình (phần của quy trình)
--> Bước họp chốt thay đổi có thể lặp lại, 2 tiếng mỗi ngày
-+ Metric: Cách đo thành công: baseline → target → cách đo
--> Từ 2–3 vòng/MVP xuống 1 vòng, và khách hàng có chốt mua MVP không?
-+ Boundary: Ranh giới AI không được vượt và khi nào người phải kiểm tra
--> Chức năng lớn: AI không tự thiết kê lại màn hình, cần lắng nghe kĩ nội dung họp và cần người dùng duyệt
-+ Mức can thiệp: Workflow
--> AI đóng vai trò lắng nghe nội dung họp và đồng thời điều chỉnh MVP, tùy theo mức độ thay đổi
-+ Quyết định: Go
--> Triển khai nội bộ cho sản phẩm pitching nội bộ trong công ty, nếu sau 1 tháng mà thời gian triển khai sản phẩm không giảm 30-40% thì thôi
+
+- Khi khách góp ý trong buổi pitch, đội demo có thể phải sửa MVP sau buổi và chờ khách xem lại.
+- Quy trình hiện tại đi từ ghi nhận góp ý, làm rõ yêu cầu, bàn giao để chỉnh sửa đến cho khách xem và xác nhận.
+- Điểm nghẽn là khoảng chờ từ góp ý đến lúc khách thấy bản sửa, nhất là khi người trình bày không thể chỉnh tại chỗ.
+- Nhóm đặt mục tiêu từ khoảng 2–3 vòng xuống 1 vòng/MVP và giảm 30–40% thời gian triển khai so với cách cũ.
+- Bản thử chỉ đổi nhãn hoặc vị trí nút Đặt lịch trên bản xem trước màn hình Lịch tư vấn. Người trình bày kiểm tra kết quả và xử lý yêu cầu ngoài phạm vi.
+- Nhóm chọn Workflow để AI nhận diện ý định, còn Rule kiểm phạm vi và áp thay đổi hợp lệ.
+- Nhóm chọn Go thử nội bộ một tháng sau khi đạt kiểm tra kỹ thuật và so sánh với sửa tay. Nếu thời gian triển khai giảm dưới 30%, nhóm quay về xác nhận rồi sửa tay.
+
 ---
 
 ## 7. Tài liệu tham khảo

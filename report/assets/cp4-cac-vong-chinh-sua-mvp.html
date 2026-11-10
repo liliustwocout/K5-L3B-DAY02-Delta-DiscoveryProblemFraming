@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Công cụ tự động ghi nhận feedback khách hàng và cập nhật MVP realtime</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #fff;
+      --ink: #10254a;
+      --muted: #405775;
+      --line: #bccfe6;
+      --accent: #1e55b5;
+      --wash: #e6f1ff;
+      --sky: #c8dfff;
+      --pixel: #b3cdf5;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #e5edf8;
+      color: var(--ink);
+    }
+
+    .stage {
+      width: min(calc(100% - 2rem), 1440px, calc((100dvh - 5.25rem) * 16 / 9));
+      margin: 1rem auto;
+    }
+
+    .slide {
+      position: relative;
+      container-type: inline-size;
+      aspect-ratio: 16 / 9;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, var(--paper) 0 87%, var(--wash) 87% 97%, var(--sky) 97%);
+      overflow: hidden;
+    }
+
+    .slide::before,
+    .slide::after {
+      content: "";
+      position: absolute;
+      width: 4cqw;
+      height: 4cqw;
+      background: var(--pixel);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 83% 100%, 83% 49%, 66% 49%, 66% 33%, 50% 33%, 50% 17%, 0 17%);
+      pointer-events: none;
+    }
+
+    .slide::before {
+      top: 1.35cqw;
+      right: 1.35cqw;
+    }
+
+    .slide::after {
+      bottom: 1.35cqw;
+      left: 1.35cqw;
+      transform: rotate(180deg);
+    }
+
+    .sheet {
+      min-height: 100%;
+      padding: 4.6cqw 6cqw 3.2cqw;
+      display: flex;
+      flex-direction: column;
+      font-size: 2.15cqw;
+      line-height: 1.37;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ol,
+    dl,
+    dd,
+    blockquote {
+      margin: 0;
+    }
+
+    h1,
+    h2 {
+      font-weight: 750;
+      letter-spacing: -.045em;
+      line-height: 1.08;
+      text-wrap: balance;
+    }
+
+    h1 {
+      font-size: 6.6cqw;
+    }
+
+    h2 {
+      font-size: 5.15cqw;
+    }
+
+    h3 {
+      font-size: 2.5cqw;
+      line-height: 1.2;
+    }
+
+    .kicker,
+    .foot,
+    .label {
+      font-size: 1.35cqw;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .kicker {
+      color: var(--accent);
+      margin-bottom: 1.35cqw;
+    }
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-top: 1.15cqw;
+      margin-top: auto;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .tinted {
+      background: linear-gradient(90deg, var(--wash) 0 67%, var(--paper) 67% 97%, var(--sky) 97%);
+      --pixel: #8eb5ef;
+    }
+
+    .tinted strong {
+      color: var(--accent);
+    }
+
+    .cover {
+      flex: 1;
+      display: grid;
+      align-content: center;
+      gap: 2.1cqw;
+      padding-bottom: 2.6cqw;
+    }
+
+    .cover p {
+      max-width: 69%;
+      color: var(--muted);
+      font-size: 2.45cqw;
+    }
+
+    .intro {
+      margin-top: 2.2cqw;
+      max-width: 89%;
+    }
+
+    .label {
+      color: var(--accent);
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 3.1cqw;
+      border-block: 1px solid var(--line);
+    }
+
+    .metrics>div {
+      display: flex;
+      flex-direction: column;
+      padding: 1.55cqw 1.7cqw;
+    }
+
+    .metrics>div:first-child {
+      padding-left: 0;
+    }
+
+    .metrics>div+div {
+      border-left: 1px solid var(--line);
+    }
+
+    .metrics .bottleneck {
+      background: var(--wash);
+    }
+
+    .metrics dt {
+      font-size: 1.6cqw;
+      color: var(--muted);
+    }
+
+    .metrics dd {
+      color: var(--accent);
+      font-size: 4.5cqw;
+      font-weight: 750;
+      line-height: 1.05;
+      margin-top: auto;
+      padding-top: .45cqw;
+      margin-bottom: .45cqw;
+      letter-spacing: -.045em;
+    }
+
+    .aside {
+      margin-top: 1.25cqw;
+      color: var(--muted);
+      font-size: 1.55cqw;
+    }
+
+    .flow {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      padding: 0;
+      margin-top: 4.1cqw;
+      border-block: 1px solid var(--line);
+    }
+
+    .flow li {
+      padding: 1.5cqw 1.15cqw 1.7cqw;
+      font-size: 2cqw;
+      font-weight: 600;
+    }
+
+    .flow li:first-child {
+      padding-left: 0;
+    }
+
+    .flow li+li {
+      border-left: 1px solid var(--line);
+    }
+
+    .flow li:nth-child(2),
+    .flow li:nth-child(3) {
+      background: var(--wash);
+    }
+
+    .flow span {
+      display: block;
+      color: var(--accent);
+      margin-bottom: 1.35cqw;
+    }
+
+    .callout {
+      margin-top: 2.65cqw;
+      padding-left: 1.4cqw;
+      border-left: .35cqw solid var(--accent);
+    }
+
+    .callout p+p {
+      margin-top: .55cqw;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4.2cqw;
+      margin-top: 3.45cqw;
+    }
+
+    .ruled {
+      border-top: 1px solid var(--line);
+      padding-top: 1.35cqw;
+    }
+
+    .split h3 {
+      margin-bottom: 1.1cqw;
+    }
+
+    .split p+p {
+      margin-top: 1.1cqw;
+    }
+
+    .template {
+      margin-top: 2.5cqw;
+      padding: 1.15cqw 1.5cqw;
+      background: var(--wash);
+      font-size: 1.9cqw;
+    }
+
+    .template .label {
+      display: block;
+      margin-bottom: .45cqw;
+    }
+
+    .hypothesis {
+      margin-top: 3cqw;
+      max-width: 85%;
+      font-size: 2.8cqw;
+    }
+
+    .demo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.2cqw;
+      margin-top: 2.4cqw;
+    }
+
+    .dialogue {
+      list-style: none;
+      padding: 0;
+      font-size: 1.9cqw;
+    }
+
+    .dialogue li {
+      border-left: .32cqw solid var(--line);
+      padding: .75cqw 1.05cqw;
+    }
+
+    .dialogue li+li {
+      margin-top: .65cqw;
+    }
+
+    .dialogue .label {
+      display: block;
+    }
+
+    .demo-running [data-turn] {
+      opacity: .68;
+    }
+
+    .demo-running [aria-current="step"] {
+      background: var(--wash);
+      border-color: var(--accent);
+      opacity: 1;
+    }
+
+    .prototype {
+      background: var(--paper);
+      border: 1px solid #9eb9df;
+      box-shadow: .45cqw .45cqw 0 var(--sky);
+    }
+
+    .prototype-header {
+      padding: .65cqw 1cqw;
+      background: #164389;
+      color: white;
+    }
+
+    .prototype-screen {
+      position: relative;
+      min-height: 15.5cqw;
+      padding: 1cqw;
+    }
+
+    .prototype-screen h3 {
+      max-width: 54%;
+      font-size: 2.2cqw;
+    }
+
+    .prototype-screen p {
+      max-width: 55%;
+      margin-top: .55cqw;
+      color: var(--muted);
+      font-size: 1.55cqw;
+    }
+
+    .mock-cta {
+      position: absolute;
+      right: 1cqw;
+      top: 1cqw;
+      padding: .55cqw 1cqw;
+      border-radius: .35cqw;
+      background: var(--accent);
+      color: white;
+      font-size: 1.6cqw;
+      font-weight: 700;
+      transition: top .65s cubic-bezier(.2, .7, .3, 1), background .35s;
+    }
+
+    .demo-before .mock-cta {
+      top: 11.6cqw;
+      background: #4c6386;
+    }
+
+    .demo-status {
+      min-height: 3.35cqw;
+      padding: .6cqw 1cqw;
+      background: var(--wash);
+      font-size: 1.5cqw;
+      font-weight: 650;
+    }
+
+    .demo-print {
+      display: none;
+    }
+
+    .demo-sequence {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4cqw 1.3cqw;
+      margin: 1.7cqw 0 1cqw;
+      color: var(--accent);
+    }
+
+    .demo-sequence span+span::before {
+      content: "→";
+      margin-right: 1.3cqw;
+    }
+
+    .demo-trigger {
+      align-self: flex-start;
+      margin-bottom: 1cqw;
+      padding: .35em .75em;
+      background: var(--paper);
+      color: var(--accent);
+      font-size: max(.8rem, 1.45cqw);
+      font-weight: 700;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .mock-cta {
+        transition: none;
+      }
+    }
+
+    .controls {
+      width: min(calc(100% - 2rem), 1440px, calc((100dvh - 5.25rem) * 16 / 9));
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .75rem;
+      color: var(--ink);
+    }
+
+    .controls[hidden] {
+      display: none;
+    }
+
+    button {
+      color: inherit;
+      border: 1px solid #7896bd;
+      border-radius: .35rem;
+      background: transparent;
+      padding: .38rem .65rem;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button:hover:not(:disabled) {
+      background: #ccdef5;
+    }
+
+    button:disabled {
+      opacity: .45;
+      cursor: default;
+    }
+
+    button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    #position {
+      min-width: 3.5rem;
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+    }
+
+    @media screen and (max-width: 700px) and (orientation: portrait) {
+
+      .stage,
+      .controls {
+        width: calc(100% - 1rem);
+      }
+
+      .stage {
+        margin-block: .5rem;
+      }
+
+      .slide {
+        aspect-ratio: auto;
+      }
+
+      .sheet {
+        min-height: 32rem;
+        padding: 1.5rem;
+        font-size: 1rem;
+      }
+
+      h1 {
+        font-size: 10cqw;
+      }
+
+      h2 {
+        font-size: 8cqw;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      .kicker,
+      .foot,
+      .label {
+        font-size: .72rem;
+      }
+
+      .kicker {
+        margin-bottom: .8rem;
+      }
+
+      .foot {
+        margin-top: 1.6rem;
+        padding-top: .8rem;
+      }
+
+      .cover {
+        gap: 1rem;
+        padding: 2rem 0;
+      }
+
+      .cover p,
+      .hypothesis {
+        font-size: 1.2rem;
+        max-width: none;
+      }
+
+      .intro {
+        margin-top: 1.2rem;
+        max-width: none;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1.25rem;
+      }
+
+      .metrics>div {
+        padding-block: .7rem;
+      }
+
+      .metrics>div:nth-child(3) {
+        padding-left: 0;
+        border-left: 0;
+      }
+
+      .metrics>div:nth-child(n+3) {
+        border-top: 1px solid var(--line);
+      }
+
+      .metrics dt,
+      .aside {
+        font-size: .85rem;
+      }
+
+      .metrics dd {
+        font-size: 6.4cqw;
+      }
+
+      .aside {
+        margin-top: .75rem;
+      }
+
+      .flow {
+        grid-template-columns: 1fr;
+        margin-top: 1.25rem;
+      }
+
+      .flow li,
+      .flow li:first-child {
+        padding: .5rem .6rem;
+        font-size: 1rem;
+      }
+
+      .flow li+li {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .flow span {
+        display: inline-block;
+        margin: 0 .65rem 0 0;
+      }
+
+      .callout {
+        margin-top: 1rem;
+        padding-left: .65rem;
+        border-width: 3px;
+      }
+
+      .split {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1.25rem;
+      }
+
+      .ruled {
+        padding-top: .65rem;
+      }
+
+      .split h3,
+      .split p+p {
+        margin-bottom: .3rem;
+      }
+
+      .template {
+        margin-top: 1rem;
+        padding: .65rem;
+        font-size: .95rem;
+      }
+
+      .hypothesis {
+        margin-top: 1.25rem;
+      }
+
+      .demo {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1.25rem;
+      }
+
+      .dialogue {
+        font-size: 1rem;
+      }
+
+      .dialogue li {
+        padding: .4rem .6rem;
+        border-width: 3px;
+      }
+
+      .dialogue li+li {
+        margin-top: .4rem;
+      }
+
+      .prototype-header,
+      .prototype-screen,
+      .demo-status {
+        padding: .6rem;
+      }
+
+      .prototype-screen {
+        min-height: 8rem;
+      }
+
+      .prototype-screen h3 {
+        font-size: 1.1rem;
+      }
+
+      .prototype-screen p {
+        margin-top: .3rem;
+        font-size: .86rem;
+      }
+
+      .mock-cta {
+        right: .6rem;
+        top: .6rem;
+        padding: .3rem .5rem;
+        border-radius: .2rem;
+        font-size: .82rem;
+      }
+
+      .demo-before .mock-cta {
+        top: 5.7rem;
+      }
+
+      .demo-status {
+        min-height: 2.65rem;
+        font-size: .8rem;
+      }
+
+      .demo-sequence {
+        margin-top: .8rem;
+      }
+    }
+
+    @page {
+      size: 13.333in 7.5in;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        background: white;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .stage {
+        width: 100%;
+        margin: 0;
+      }
+
+      .slide,
+      .slide[hidden] {
+        display: block;
+        margin: 0;
+        break-after: page;
+      }
+
+      .slide:last-child {
+        break-after: auto;
+      }
+
+      .controls,
+      .demo-trigger {
+        display: none;
+      }
+
+      .demo-status:not(.demo-print) {
+        display: none;
+      }
+
+      .demo-print {
+        display: block;
+      }
+
+      .demo-before .mock-cta {
+        top: 1cqw;
+        background: var(--accent);
+      }
+
+      .demo-running [data-turn] {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="stage" aria-label="Bộ slide về công cụ tự động ghi nhận feedback khách hàng và cập nhật MVP realtime">
+    <section class="slide tinted" id="slide-1" aria-labelledby="title-1">
+      <div class="sheet">
+        <p class="kicker">Problem Card 02</p>
+        <div class="cover">
+          <h1 id="title-1">Công cụ tự động ghi nhận<br>feedback khách hàng<br>và cập nhật MVP realtime</h1>
+          <p>Công cụ nghe cuộc trao đổi khi pitching, nhận ra yêu cầu chỉnh sửa và tự cập nhật màn hình MVP đang trình
+            chiếu.</p>
+        </div>
+        <footer class="foot"><span>Nhóm Delta</span><span>01 / 07</span></footer>
+      </div>
+    </section>
+    <section class="slide" id="slide-2" aria-labelledby="title-2">
+      <div class="sheet">
+        <p class="kicker">Vấn đề</p>
+        <h2 id="title-2">Trao đổi MVP mất thời gian,<br>giao diện không kịp sửa ngay</h2>
+        <p class="intro"><strong>Pitching</strong> là buổi trình bày và demo MVP để lấy phản hồi từ khách hàng. Khi nhóm
+          chưa thể sửa giao diện ngay, hai bên thường phải hẹn thêm buổi để xem bản sửa và làm rõ yêu cầu.</p>
+        <dl class="metrics">
+          <div>
+            <dt>Thời lượng mỗi buổi họp</dt>
+            <dd>~2 giờ</dd>
+          </div>
+          <div>
+            <dt>Số buổi pitching mỗi MVP</dt>
+            <dd>2–3 buổi</dd>
+          </div>
+          <div>
+            <dt>Tổng thời gian họp mỗi MVP</dt>
+            <dd>~4–6 giờ</dd>
+          </div>
+          <div class="bottleneck">
+            <dt>Thời gian tự họp nội bộ (chỉnh sửa)</dt>
+            <dd>~1 giờ</dd>
+          </div>
+        </dl>
+        <p class="aside">Nếu nhóm chỉnh sửa sau mỗi buổi pitching, tổng thời gian họp và chỉnh sửa là khoảng
+          <strong>6–9 giờ cho mỗi MVP</strong>.</p>
+        <footer class="foot"><span>Nhóm Delta</span><span>02 / 07</span></footer>
+      </div>
+    </section>
+    <section class="slide" id="slide-3" aria-labelledby="title-3">
+      <div class="sheet">
+        <p class="kicker">Quy trình hiện tại</p>
+        <h2 id="title-3">Quy trình sửa màn hình sau buổi pitch</h2>
+        <ol class="flow">
+          <li><span class="label">01</span>Khách góp ý khi xem demo</li>
+          <li><span class="label">02</span>Nhóm họp lại để chốt yêu cầu</li>
+          <li><span class="label">03</span>Nhóm sửa màn hình sau buổi họp</li>
+          <li><span class="label">04</span>Trình bày lại ở buổi khác</li>
+          <li><span class="label">05</span>Khách xem và xác nhận hoặc góp ý tiếp</li>
+        </ol>
+        <div class="callout">
+          <p><strong>Khi nào hai bên phát hiện hiểu khác nhau?</strong></p>
+          <p>Nếu đến buổi sau khách mới thấy màn hình khác ý mình, cả hai bên lại mất thêm thời gian để làm rõ và xem
+            bản sửa tiếp theo.</p>
+        </div>
+        <footer class="foot"><span>Nhóm Delta</span><span>03 / 07</span></footer>
+      </div>
+    </section>
+    <section class="slide" id="slide-4" aria-labelledby="title-4">
+      <div class="sheet">
+        <p class="kicker">Quy trình đề xuất</p>
+        <h2 id="title-4">MVP tự cập nhật ngay khi khách góp ý</h2>
+        <div class="split">
+          <div class="ruled">
+            <h3>Nghe và nhận ra yêu cầu</h3>
+            <p>Công cụ theo dõi cuộc trao đổi và phát hiện câu có yêu cầu thay đổi giao diện.</p>
+          </div>
+          <div class="ruled">
+            <h3>Tự áp dụng lên bản xem trước</h3>
+            <p>Công cụ sửa màn hình MVP đang demo ngay khi nhận ra yêu cầu rõ ràng. Hai bên tiếp tục trao đổi trong khi
+              giao diện tự đổi.</p>
+          </div>
+        </div>
+        <div class="template">
+          <span class="label">Thao tác trong buổi pitch</span>
+          Hai bên chỉ nói chuyện. Công cụ tự cập nhật bản xem trước, không cần bấm chuột, gõ lệnh hay xác nhận.
+        </div>
+        <footer class="foot"><span>Nhóm Delta</span><span>04 / 07</span></footer>
+      </div>
+    </section>
+    <section class="slide tinted" id="slide-5" aria-labelledby="title-5">
+      <div class="sheet">
+        <p class="kicker">Minh họa quy trình tự động</p>
+        <h2 id="title-5">Khách vừa góp ý, giao diện tự đổi</h2>
+        <div class="demo">
+          <ol class="dialogue" aria-label="Cuộc trao đổi minh họa">
+            <li data-turn><span class="label">Công ty</span>“Đây là màn hình đặt lịch của MVP.”</li>
+            <li data-turn><span class="label">Khách hàng</span>“Đưa nút ‘Đặt lịch’ lên đầu màn hình giúp tôi.”</li>
+            <li data-turn><span class="label">Khách hàng</span>“Tiếp theo, luồng chọn giờ hoạt động thế nào?”</li>
+          </ol>
+          <div class="prototype" aria-label="Màn hình MVP minh họa">
+            <div class="prototype-header label">MVP đang trình chiếu</div>
+            <div class="prototype-screen">
+              <h3>Lịch tư vấn</h3>
+              <p>Xem giờ trống và đặt lịch hẹn.</p>
+              <span class="mock-cta">Đặt lịch</span>
+            </div>
+            <p class="demo-status" aria-live="polite">Đã tự chuyển nút “Đặt lịch” lên đầu màn hình.</p>
+            <p class="demo-status demo-print">Đã tự chuyển nút “Đặt lịch” từ cuối lên đầu màn hình.</p>
+          </div>
+        </div>
+        <p class="demo-sequence label"><span>Nghe cuộc trao đổi</span><span>Phát hiện yêu cầu</span><span>Tự cập nhật
+            giao diện</span></p>
+        <button class="demo-trigger" type="button" hidden>Chạy minh họa</button>
+        <footer class="foot"><span>Nhóm Delta</span><span>05 / 07</span></footer>
+      </div>
+    </section>
+    <section class="slide tinted" id="slide-6" aria-labelledby="title-6">
+      <div class="sheet">
+        <p class="kicker">Giả thuyết cần kiểm chứng</p>
+        <h2 id="title-6">Phạm vi cập nhật tự động</h2>
+        <p class="hypothesis">AI phân biệt lời trao đổi thông thường với yêu cầu chỉnh sửa và <strong>tự áp dụng thay
+            đổi rõ ràng lên bản xem trước.</strong></p>
+        <div class="split">
+          <div class="ruled">
+            <h3>Thay đổi nhỏ trên một màn hình</h3>
+            <p>Thử đổi nhãn, vị trí hoặc trạng thái hiển thị trên prototype.</p>
+          </div>
+          <div class="ruled">
+            <h3>Câu nói chưa đủ rõ</h3>
+            <p>Nếu chưa xác định được thành phần hoặc thay đổi cần áp dụng, công cụ tiếp tục nghe để lấy thêm ngữ cảnh.
+            </p>
+          </div>
+        </div>
+        <footer class="foot"><span>Nhóm Delta</span><span>06 / 07</span></footer>
+      </div>
+    </section>
+    <section class="slide" id="slide-7" aria-labelledby="title-7">
+      <div class="sheet">
+        <p class="kicker">Kế hoạch kiểm chứng đề xuất</p>
+        <h2 id="title-7">Tốc độ và độ chính xác khi tự cập nhật</h2>
+        <div class="split">
+          <div class="ruled">
+            <h3>Đo thời gian trên một màn hình</h3>
+            <p>Đo từ lúc khách nói xong yêu cầu đến lúc giao diện tự đổi trên prototype.</p>
+          </div>
+          <div class="ruled">
+            <h3>Đếm lần cập nhật nhầm</h3>
+            <p>Ghi số lần sửa sai ý, bỏ sót yêu cầu hoặc tự sửa khi hai bên chỉ đang trao đổi.</p>
+          </div>
+        </div>
+        <p class="template"><span class="label">Mục tiêu ở cấp MVP</span>Giảm còn 1 vòng chỉnh sửa mỗi MVP theo Problem
+          Card #2.</p>
+        <footer class="foot"><span>Nhóm Delta</span><span>07 / 07</span></footer>
+      </div>
+    </section>
+  </main>
+  <nav class="controls" aria-label="Điều khiển trình chiếu" hidden>
+    <button id="previous" type="button" aria-label="Slide trước">← Trước</button>
+    <span id="position" aria-live="polite"></span>
+    <button id="next" type="button" aria-label="Slide tiếp theo">Sau →</button>
+  </nav>
+  <script>
+    const slides = [...document.querySelectorAll(".slide")];
+    const previous = document.querySelector("#previous");
+    const next = document.querySelector("#next");
+    const position = document.querySelector("#position");
+    const demoSlide = document.querySelector("#slide-5");
+    const demoStatus = demoSlide.querySelector(".demo-status");
+    const demoTrigger = demoSlide.querySelector(".demo-trigger");
+    const dialogue = [...demoSlide.querySelectorAll("[data-turn]")];
+    const demoSteps = [
+      { time: 0, turn: 0, status: "Đang nghe cuộc trao đổi…", before: true },
+      { time: 1800, turn: 1, status: "Phát hiện yêu cầu đưa nút “Đặt lịch” lên đầu.", before: true },
+      { time: 4100, turn: 1, status: "Đã tự chuyển nút “Đặt lịch” lên đầu màn hình.", before: false },
+      { time: 5500, turn: 2, status: "Giao diện đã cập nhật. Cuộc trao đổi tiếp tục.", before: false }
+    ];
+    let demoTimers = [];
+    let demoStarted = false;
+    let current = 0;
+
+    function renderDemoStep(step) {
+      demoSlide.classList.toggle("demo-before", step.before);
+      demoStatus.textContent = step.status;
+      dialogue.forEach((line, i) => {
+        if (i === step.turn) line.setAttribute("aria-current", "step");
+        else line.removeAttribute("aria-current");
+      });
+    }
+
+    function resetDemo() {
+      demoTimers.forEach(timer => clearTimeout(timer));
+      demoTimers = [];
+      demoStarted = false;
+      demoTrigger.textContent = "Chạy minh họa";
+      demoSlide.classList.remove("demo-running");
+      renderDemoStep({ before: true, turn: -1, status: "Bấm Chạy minh họa hoặc nhấn → để bắt đầu." });
+    }
+
+    function playDemo() {
+      resetDemo();
+      demoStarted = true;
+      demoTrigger.textContent = "Chạy lại minh họa";
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        renderDemoStep(demoSteps.at(-1));
+        return;
+      }
+      demoSlide.classList.add("demo-running");
+      renderDemoStep(demoSteps[0]);
+      demoTimers = demoSteps.slice(1).map(step => setTimeout(() => renderDemoStep(step), step.time));
+    }
+
+    function showSlide(index) {
+      current = index;
+      slides.forEach((slide, i) => { slide.hidden = i !== current; });
+      resetDemo();
+      previous.disabled = current === 0;
+      next.disabled = current === slides.length - 1;
+      position.textContent = `${current + 1} / ${slides.length}`;
+      window.scrollTo(0, 0);
+    }
+
+    function showFromHash() {
+      const index = slides.findIndex(slide => "#" + slide.id === location.hash);
+      showSlide(Math.max(0, index));
+    }
+
+    function goTo(index) {
+      if (index >= 0 && index < slides.length && index !== current) {
+        location.hash = slides[index].id;
+      }
+    }
+
+    function advance() {
+      if (slides[current] === demoSlide && !demoStarted) playDemo();
+      else goTo(current + 1);
+    }
+
+    demoTrigger.addEventListener("click", playDemo);
+    demoTrigger.hidden = false;
+    previous.addEventListener("click", () => goTo(current - 1));
+    next.addEventListener("click", advance);
+    window.addEventListener("hashchange", showFromHash);
+    document.addEventListener("keydown", event => {
+      const destinations = {
+        ArrowLeft: current - 1,
+        ArrowRight: current + 1,
+        Home: 0,
+        End: slides.length - 1
+      };
+      if (event.ctrlKey || event.altKey || event.metaKey || !Object.hasOwn(destinations, event.key)) return;
+      event.preventDefault();
+      if (event.key === "ArrowRight") {
+        if (!event.repeat) advance();
+      } else {
+        goTo(destinations[event.key]);
+      }
+    });
+    showFromHash();
+    document.querySelector(".controls").hidden = false;
+  </script>
+</body>
+
+</html>
