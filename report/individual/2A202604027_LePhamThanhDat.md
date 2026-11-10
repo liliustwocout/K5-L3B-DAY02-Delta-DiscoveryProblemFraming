@@ -1,14 +1,10 @@
-# Báo cáo cá nhân — 2A202604027
-
-> Đổi tên file theo quy tắc `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md` (MSSV trước, dấu `_`, họ tên viết liền không dấu). Sửa cả dòng tiêu đề phía trên cho khớp.
-> Template chi tiết và prompt mẫu cho từng mục: [docs/01-worksheet.md](../../docs/01-worksheet.md).
-> Mỗi thành viên một file trong `report/individual/` trên repo nhóm: copy template này thành file mới, điền, rồi commit bằng tài khoản GitHub của bạn. Không viết hộ người khác.
+# Báo cáo cá nhân — 2A202604027_LePhamThanhDat
 
 ## 1. Thông tin học viên
 
 - Họ tên: Lê Phạm Thành Đạt
 - MSSV: 2A202604027
-- Email trường (không bắt buộc, repo có thể để public):
+- Email trường (không bắt buộc, repo có thể để public): 26ai.datlpt@vinuni.edu.vn
 - Tên nhóm: Delta
 - Link repo nhóm: https://github.com/liliustwocout/K5-L3B-DAY02-Delta-DiscoveryProblemFraming
 
@@ -18,16 +14,16 @@
 
 Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng hợp nhiều thông tin** · **Pain từ người khác**.
 
-| # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
-|---:|---|---|---|---|
-| 1 | Tốn thời gian | Khi kiểm tra hồ sơ công ty, tôi muốn xác định bản giấy và bản mềm đang lệch ở mục nào, để biết cần bổ sung gì và hoàn tất kiểm tra. | Nhân sự phụ trách hồ sơ | Việc kiểm tra và bổ sung hồ sơ mất khoảng **1 ngày**. Chưa rõ số hồ sơ bị lệch. |
-| 2 | Cần đọc, tổng hợp nhiều thông tin | Khi đã đăng ký nhiều sự kiện trong cùng một khoảng thời gian, tôi muốn nắm được mình đã đăng ký những sự kiện nào và diễn ra lúc nào, để sắp xếp lịch và tham dự đúng giờ. | Tôi, người đăng ký sự kiện | Đã đăng ký **4 sự kiện trong một tuần** và không nhớ hết lịch. |
-| 3 | Lặp lại | Khi có hạn nộp báo cáo đồ án hoặc chuẩn bị slide thuyết trình, tôi muốn bắt đầu đủ sớm để còn thời gian rà soát nội dung trước hạn. | Tôi, người làm đồ án | Thường bắt đầu viết báo cáo trước hạn **1 ngày** hoặc làm slide **đêm hôm trước**. |
-| 4 | Cần đọc, tổng hợp nhiều thông tin | Khi vừa kết thúc buổi mendan với công ty, tôi muốn nắm lại nội dung chính và lịch trao đổi tiếp theo, để biết mình cần theo dõi điều gì sau buổi họp. | Tôi, người tham gia mendan | Sau buổi trao đổi, tôi phải hỏi lại **hai nhóm thông tin**: thời gian buổi mendan tiếp theo và những vấn đề chính đã được trao đổi. |
-| 5 | Cần đọc, tổng hợp nhiều thông tin | Khi chuẩn bị ôn tiếng Nhật N2 và gặp nhiều nguồn tài liệu, tôi muốn xác định nguồn nào đáng tin và phù hợp để chọn được tài liệu bắt đầu ôn. | Tôi, người chuẩn bị ôn N2 | Từ lúc đăng ký đến khi còn khoảng **1 tháng trước kỳ thi**, tôi vẫn chưa ôn được ngày nào vì còn phân vân giữa nhiều nguồn tài liệu. |
-| 6 | Tốn thời gian | Khi gửi đơn qua e-office, tôi muốn biết đơn đang ở bước nào và ai cần xử lý tiếp, để đơn được duyệt đúng lúc. | Người gửi đơn và cấp trên phụ trách duyệt | Gửi và xử lý đơn qua nhiều thao tác, đôi khi gặp lỗi. Đơn từng bị kẹt ở bước chờ vì cấp trên quên duyệt. Chưa ghi nhận thời gian chờ duyệt. |
-| 7 | Pain từ người khác | Khi cần chuẩn bị cho kỳ thực tập và thông báo của trường còn điểm chưa rõ, tôi muốn nhận được câu trả lời đủ cụ thể để biết mình cần chuẩn bị gì và làm bước nào tiếp theo. | Tôi và sinh viên cần thông tin thực tập | Đã hỏi phía trường nhưng câu trả lời chưa giải quyết được thắc mắc. Tôi phải chờ khoảng **2 tháng** để có thông báo tiếp theo. |
-| 8 | Pain từ người khác | Khi tổng hợp số liệu để làm báo cáo có nhiều bộ phận cùng tham gia, tôi muốn xác định các bên đang dùng cùng số liệu, để tránh phải rà soát lại trong lúc làm báo cáo. | Người lập báo cáo và các bộ phận cung cấp số liệu | Trong lúc làm báo cáo, một chị đã gọi cho văn phòng trường để đối chiếu. Cuộc gọi cho thấy số liệu giữa hai bên bị lệch và phải rà soát lại báo cáo. Chưa ghi nhận thời gian rà soát. |
+| # | Lăng kính | Job Story: Bối cảnh → nhu cầu → mục đích | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
+| ---: | --- | --- | --- | --- |
+| 1 | Tốn thời gian | Khi kiểm tra hồ sơ công ty, người phụ trách cần biết bản giấy và bản mềm lệch ở mục nào để bổ sung đúng phần còn thiếu. | Nhân sự phụ trách hồ sơ | Việc kiểm tra và bổ sung hồ sơ mất khoảng **1 ngày**. Chưa rõ số hồ sơ bị lệch. |
+| 2 | Cần đọc, tổng hợp nhiều thông tin | Khi đăng ký nhiều sự kiện trong cùng một tuần, người tham dự cần xem lại danh sách và giờ của từng sự kiện để sắp lịch và đến đúng giờ. | Người đăng ký sự kiện | Đã đăng ký **4 sự kiện trong một tuần** và không nhớ hết lịch. |
+| 3 | Lặp lại | Khi có hạn nộp báo cáo hoặc slide thuyết trình, người làm đồ án cần bắt đầu đủ sớm để còn thời gian rà soát nội dung trước hạn. | Người làm đồ án | Thường bắt đầu viết báo cáo trước hạn **1 ngày** hoặc làm slide **đêm hôm trước**. |
+| 4 | Cần đọc, tổng hợp nhiều thông tin | Sau buổi mendan với công ty, người tham gia cần nắm lại nội dung chính và lịch hẹn kế tiếp để biết việc gì cần theo dõi. | Người tham gia mendan | Sau buổi trao đổi, phải hỏi lại **hai nhóm thông tin** gồm thời gian buổi mendan tiếp theo và những vấn đề chính đã trao đổi. |
+| 5 | Cần đọc, tổng hợp nhiều thông tin | Khi có quá nhiều tài liệu ôn tiếng Nhật N2, người học cần chọn được nguồn đáng tin và phù hợp để bắt đầu ôn. | Người chuẩn bị ôn N2 | Từ lúc đăng ký đến khi còn khoảng **1 tháng trước kỳ thi**, vẫn chưa ôn được ngày nào vì còn phân vân giữa nhiều nguồn tài liệu. |
+| 6 | Tốn thời gian | Khi gửi đơn qua e-office, người gửi cần biết đơn đang ở bước nào và ai phụ trách bước tiếp theo để đơn được duyệt đúng lúc. | Người gửi đơn và cấp trên phụ trách duyệt | Gửi và xử lý đơn qua nhiều thao tác, đôi khi gặp lỗi. Đơn từng bị kẹt ở bước chờ vì cấp trên quên duyệt. Chưa ghi nhận thời gian chờ duyệt. |
+| 7 | Pain từ người khác | Khi thông báo thực tập của trường còn điểm chưa rõ, sinh viên cần câu trả lời cụ thể để biết nên chuẩn bị gì và làm bước nào tiếp theo. | Sinh viên cần thông tin thực tập | Đã hỏi phía trường nhưng câu trả lời chưa giải quyết được thắc mắc. Phải chờ khoảng **2 tháng** để có thông báo tiếp theo. |
+| 8 | Pain từ người khác | Khi tổng hợp số liệu từ nhiều bộ phận, người lập báo cáo cần xác nhận các bên đang dùng cùng số liệu để tránh phải rà soát lại báo cáo. | Người lập báo cáo và các bộ phận cung cấp số liệu | Trong lúc làm báo cáo, một chị đã gọi cho văn phòng trường để đối chiếu. Cuộc gọi cho thấy số liệu giữa hai bên bị lệch và phải rà soát lại báo cáo. Chưa ghi nhận thời gian rà soát. |
 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
@@ -40,9 +36,9 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 ### Bảng chọn top 3
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
-|---:|---|---|---|
+| ---: | --- | --- | --- |
 | 1 | Đối chiếu hồ sơ HR bản giấy và bản mềm (CP1 #1) | Một đợt kiểm tra và bổ sung mất khoảng một ngày. Có thể thu hẹp vào khâu xác định hồ sơ nào cần bổ sung. | Chưa rõ số hồ sơ và số phút riêng cho bước đối chiếu. Cần hỏi người trực tiếp xử lý về trình tự thực tế. |
-| 2 | Theo dõi lịch sự kiện đã đăng ký (CP1 #2) | Có một tuần đăng ký 4 sự kiện và không nhớ hết lịch. Có thể dựng lại tình huống từ các xác nhận đăng ký của chính mình. | Chưa rõ mất bao lâu để tra lại lịch và đã có sự kiện nào bị bỏ lỡ hay chưa. |
+| 2 | Theo dõi lịch sự kiện đã đăng ký (CP1 #2) | Có một tuần đăng ký 4 sự kiện và không nhớ hết lịch. Có thể dựng lại tình huống từ các xác nhận đăng ký đã nhận. | Chưa rõ mất bao lâu để tra lại lịch và đã có sự kiện nào bị bỏ lỡ hay chưa. |
 | 3 | Chờ thông tin thực tập từ trường (CP1 #7) | Đã hỏi trường nhưng chưa giải quyết được thắc mắc và phải chờ khoảng hai tháng tới thông báo kế tiếp. | Chưa rõ câu hỏi cụ thể, ai phụ trách trả lời và thông báo kế tiếp có giải quyết được câu hỏi hay không. |
 
 ### Problem Card #1 — Đối chiếu hồ sơ HR
@@ -50,8 +46,8 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 Các sơ đồ dưới đây là bản dựng lại từ tình huống ở CP1. Số phút có nhãn **ước tính** là giả định để thảo luận, cần đối chiếu với lần thực hiện thật trước khi dùng làm baseline.
 
 | Trường | Nội dung |
-|---|---|
-| Job Story | Khi kiểm tra hồ sơ công ty, tôi muốn biết mục nào lệch giữa bản giấy và bản mềm, để xác định phần cần bổ sung và hoàn tất kiểm tra. |
+| --- | --- |
+| Job Story | Khi kiểm tra hồ sơ công ty, nhân sự phụ trách cần biết mục nào lệch giữa bản giấy và bản mềm để bổ sung hồ sơ và hoàn tất kiểm tra. |
 | Actor | Nhân sự trực tiếp kiểm tra và bổ sung hồ sơ. |
 | Thời điểm / bối cảnh | Trong một đợt kiểm tra hồ sơ có cả bản giấy lẫn bản mềm. |
 | Quy trình hiện tại (3–7 bước) | Lập danh sách cần kiểm → tìm đủ hai bản → đối chiếu và đánh dấu lệch → bổ sung hoặc chuyển phần thiếu cho người phụ trách → kiểm lại. |
@@ -77,9 +73,9 @@ Mô hình thời gian: 480 phút nếu tạm quy ước 1 ngày làm việc là 
 ### Problem Card #2 — Theo dõi lịch sự kiện
 
 | Trường | Nội dung |
-|---|---|
-| Job Story | Khi đăng ký nhiều sự kiện trong cùng một tuần, tôi muốn biết mình đã đăng ký những sự kiện nào và diễn ra lúc nào, để chủ động sắp xếp lịch. |
-| Actor | Tôi, người tự đăng ký và sắp lịch tham dự. |
+| --- | --- |
+| Job Story | Khi đăng ký nhiều sự kiện trong cùng một tuần, người tham dự cần xem lại tên và giờ của từng sự kiện để chủ động sắp lịch. |
+| Actor | Người tự đăng ký và sắp lịch tham dự. |
 | Thời điểm / bối cảnh | Tuần đã đăng ký 4 sự kiện. |
 | Quy trình hiện tại (3–7 bước) | Xem thông tin sự kiện → đăng ký → lục lại xác nhận và kiểm tra giờ → so với lịch cá nhân để sắp xếp. Kênh lưu xác nhận cần kiểm tra lại. |
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3, tra lại danh sách và giờ của 4 sự kiện, ước tính **12 phút**. Có thể bấm giờ khi dựng lại danh sách để kiểm tra giả định. |
@@ -104,9 +100,9 @@ Tổng thời gian thao tác ước tính: 33 phút, rải trong tuần.
 ### Problem Card #3 — Chờ thông tin thực tập
 
 | Trường | Nội dung |
-|---|---|
-| Job Story | Khi cần chuẩn bị thực tập và thông báo của trường còn điểm chưa rõ, tôi muốn biết trường đã xác nhận được gì và khi nào có cập nhật cho phần còn lại, để chủ động chuẩn bị. |
-| Actor | Tôi, sinh viên đang chuẩn bị thực tập. |
+| --- | --- |
+| Job Story | Khi thông báo thực tập còn điểm chưa rõ, sinh viên cần biết trường đã xác nhận những gì và khi nào có thông tin tiếp theo để chủ động chuẩn bị. |
+| Actor | Sinh viên đang chuẩn bị thực tập. |
 | Thời điểm / bối cảnh | Sau khi đọc thông báo của trường và hỏi về phần chưa rõ. |
 | Quy trình hiện tại (3–7 bước) | Đọc thông báo → gửi câu hỏi → đọc phản hồi và xác định phần vẫn chưa rõ → chờ thông báo kế tiếp → xem thông báo mới. |
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 4, chờ cập nhật sau phản hồi chưa đủ rõ. Đã ghi nhận khoảng 2 tháng chờ theo lịch. Thời gian trường trực tiếp xử lý câu hỏi chưa rõ. |
@@ -136,63 +132,87 @@ Tổng thời gian thao tác ước tính: 25 phút. Thời gian chờ phản h�
 ### AI đã phản biện card thế nào
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
-|---|---|---|
+| --- | --- | --- |
 | Card 1 dễ gán thời gian cả đợt cho một bước dù chưa đo riêng. | Đồng ý | Tách mốc khoảng 1 ngày của cả đợt khỏi số phút đối chiếu và bổ sung. |
 | Card 2 có nguy cơ bỏ lỡ sự kiện, nhưng chưa có lần bỏ lỡ được ghi nhận. | Đồng ý | Đo số lịch tra đúng và thời gian tra cứu. Ghi việc bỏ lỡ là nguy cơ. |
 | Card 3 có mốc chờ thông báo, chưa có mốc xác nhận câu hỏi được giải đáp. | Đồng ý | Tách thời gian đến cập nhật khỏi việc cập nhật đã giải quyết câu hỏi hay chưa. |
 
 ---
 
-## 4. Tôi đã tham gia phần nào (CP3 → CP7)
+## 4. Đóng góp cá nhân (CP3 → CP7)
 
-| Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
-|---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+Phần việc chính là research CP4 và ghi lại đề tài nhóm đã chọn. Các câu hỏi CP3 dưới đây được rút ra khi đọc lại Problem Card và báo cáo nhóm. Ghi chép CP3 hiện chưa có nội dung trao đổi cụ thể.
+
+| Hoạt động | Phần việc cá nhân | Kết quả / ảnh hưởng tới bài nhóm |
+| --- | --- | --- |
+| Pitch Problem Card | Chuẩn bị ba card, ưu tiên tình huống đối chiếu hồ sơ HR bản giấy và bản mềm. | Có mốc khoảng một ngày cho cả đợt để bắt đầu kiểm chứng. Chưa có ghi chép xác nhận card đã pitch. |
+| Phản biện bài của bạn khác | Câu hỏi dành cho Hiếu khi xem lại Card #2. Trong 2–3 vòng chỉnh sửa, lần nào phải hẹn lại chỉ để khách xem một thay đổi nhỏ? Lần nào phải hẹn vì yêu cầu còn chưa rõ? | Đề xuất ghi lý do của từng buổi hẹn lại để biết buổi nào có thể tránh được nếu cập nhật giao diện ngay trong lúc pitch. |
+| Nhận phản biện | Khi xem lại card HR, câu hỏi quan trọng là mốc khoảng một ngày tính riêng bước đối chiếu hay tính cả đợt. Phản biện của AI ở CP2 cũng chỉ ra điểm này. | Tách mốc khoảng một ngày đã ghi nhận khỏi 180 phút ước tính cho bước đối chiếu. Cần đo thêm thời gian tìm hồ sơ và bổ sung để kiểm tra điểm nghẽn. |
+| Gom cluster / cây OST | Cách gom khi xem lại các card gồm ba nhóm. Card HR thuộc nhóm đối chiếu thông tin. Card sự kiện và thực tập thuộc nhóm theo dõi lịch hoặc cập nhật. Card MVP của Hiếu thuộc nhóm làm rõ phản hồi và xác nhận bản sửa. | Outcome đề xuất cho card MVP là giảm số buổi hẹn lại chỉ để xác nhận bản sửa giao diện. Ba nhu cầu trong OST là hiểu đúng ý khách, có bản sửa để xem ngay và xác nhận thay đổi trong lúc hai bên còn trao đổi. |
+| Chọn candidate problem | Ghi lại lựa chọn của nhóm trong [TEAM.md](../../TEAM.md) và [báo cáo nhóm](../team/group_report.md#24-chấm-điểm-shortlist-15). | Nhóm chọn Card #2 của Hiếu. Card này mô tả được vòng lặp chỉnh sửa và có thể thử riêng một thay đổi nhỏ trên một màn hình. Card HR còn thiếu số hồ sơ và thời gian từng bước. |
+| Kiểm chứng / research | Đối chiếu Google Cloud Speech-to-Text, Figma Make và JSON Patch. Tách 15–20 phút trao đổi và cập nhật mỗi vòng khỏi khoảng hai giờ của toàn buổi pitch và khoảng một giờ chỉnh sửa nội bộ giả định sau mỗi buổi. | [Mục 3.3](../team/group_report.md#33-research-giải-pháp-đã-có) ghi lại ba nguồn và câu hỏi cần thử. Công cụ có phân biệt được yêu cầu sửa với lời trao đổi bình thường đủ nhanh để cập nhật bản xem trước không? Hiện có đối chiếu tài liệu, chưa có số đo từ buổi pitch thật. |
+| Quy trình nhóm | Chuẩn bị sơ đồ luồng chép lời, nhận diện yêu cầu và cập nhật bản xem trước, cùng [20 tình huống thử](../assets/cp4-bo-tinh-huong-mvp.md). | Nhóm có đầu vào để so sánh quy trình trước và sau. Trong bản thử, người trình bày có thể khôi phục bản xem trước và chuyển sang chỉ ghi nhận nếu công cụ sửa sai. |
+| Problem Statement | Từ ghi chú CP4, đề xuất tập trung vào người phụ trách demo MVP và khoảng chờ từ lúc khách góp ý đến lúc thấy bản sửa để xác nhận. | Dùng số buổi hẹn lại chỉ để xem bản sửa làm chỉ số kết quả. Thời gian từ lúc khách nói xong đến lúc thấy đúng bản sửa là chỉ số riêng của prototype. |
+| Mức can thiệp AI | Bàn giao bộ tình huống gồm 10 yêu cầu rõ và 10 câu cần giữ nguyên giao diện. Đề xuất thử Workflow với các bước cố định. | AI nhận diện ý định từ bản chép cuối. Rule giới hạn thay đổi trong hai thuộc tính của một nút. Người trình bày xác nhận ý khách và khôi phục bản xem trước khi cần. |
+| Quyết định | **Go** cho bản thử nội bộ với Workflow. | Chỉ cân nhắc dùng tự động trong buổi pitch thật sau khi chạy bộ thử và so sánh với cách sửa tay trong buổi mô phỏng. [Quyết định CP6](../team/group_report.md#8-quyết-định-cp6) |
+
+### Đề xuất cá nhân cho CP5–CP6
+
+- **Quy trình trước và sau.** Hiện tại, khách góp ý → nhóm làm rõ và sửa nội bộ → khách xem lại ở buổi khác. Với bản thử, công cụ lấy bản chép cuối → AI trích yêu cầu → Rule kiểm tra màn hình, nút và thao tác → cập nhật bản xem trước để hai bên đối chiếu ngay. Chỉ thử trên màn hình Lịch tư vấn, với nhãn và vị trí đầu/cuối của nút Đặt lịch. Câu chưa rõ, câu rút lại yêu cầu hoặc thao tác ngoài phạm vi giữ nguyên giao diện. Người trình bày có thể khôi phục bản trước và ghi yêu cầu để sửa tay.
+- **Baseline và cách đo.** Mốc 15–20 phút mỗi vòng và 2–3 vòng mỗi MVP là số ước tính trong card của Hiếu. Để có baseline, xem lại lịch họp và ghi chú của một MVP đã làm, rồi ghi số lần hẹn lại chỉ để xem bản sửa, số phút sửa nội bộ và lý do phát sinh từng buổi. Với prototype, đo từ khi người nói kết thúc câu đến khi giao diện ổn định. Ngưỡng đề xuất là sửa đúng ít nhất **9/10** yêu cầu rõ, **0/10** lượt sửa nhầm ở nhóm cần giữ nguyên và tối đa **10 giây** cho mỗi lượt sửa đúng.
+- **So sánh và ngưỡng dừng.** Lấy cách người trình bày xác nhận rồi sửa trực tiếp làm đối chứng. Rule có thể xử lý lệnh theo mẫu. Workflow đáng thử vì khách có nhiều cách nói cùng một yêu cầu, trong khi các bước xử lý và phần giao diện được sửa có thể định trước. Phạm vi này chưa cần Agent tự chọn công cụ hoặc tự lập kế hoạch. Nếu có lần tự sửa sai, dừng chế độ tự áp dụng, khôi phục bản trước và chuyển sang chỉ ghi nhận. Nếu vượt qua bộ thử, bước tiếp theo là so với cách sửa trực tiếp trong một buổi pitch mô phỏng trước khi cân nhắc dùng với khách.
 
 ---
 
 ## 5. Dùng AI
 
-| Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
-|---|---|---|---|---|
+| Checkpoint | Cách dùng AI | Phần hữu ích | Hạn chế | Điều chỉnh sau khi rà soát |
+| --- | --- | --- | --- | --- |
 | CP1 Scan | Diễn đạt lại 8 ý sau khi tự scan. | Chuẩn hóa Job Story, phân biệt lệch giữa hai bản hồ sơ với lệch thông tin giữa các ban, đánh dấu số liệu còn thiếu. | Bản đầu mô tả e-office chung chung, chưa thấy bước duyệt đơn bị tắc. | Bổ sung các mốc và tình huống từ trải nghiệm thật, thu hẹp ý e-office vào đơn bị kẹt ở bước chờ duyệt. |
 | CP2 Problem Card | Dựng và phản biện ba card từ các tình huống đã ghi ở CP1. | Tách mốc quan sát, giả định về điểm nghẽn và mục tiêu thử. | AI suy luận một số bước trung gian và ước tính thời lượng. | Đánh dấu riêng bước và số phút cần đối chiếu với lần thực hiện thật. |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP4 Research | Dùng AI để hỗ trợ tìm và đối chiếu tài liệu cho đề tài MVP realtime. | Tách phần nhận giọng nói, chỉnh bản xem trước và áp thay đổi có cấu trúc. | Tài liệu riêng lẻ chưa trả lời được liệu cả luồng có chạy đủ nhanh trong buổi pitch. | Tách phần đã có tài liệu mô tả khỏi phần cần đo bằng prototype. Dùng luồng gửi prompt có chủ đích của Figma Make làm mốc so sánh. |
+| CP5 Quy trình | Dùng AI để rà soát luồng đề xuất từ sơ đồ CP4 và bộ tình huống. | Giúp tách bước AI hiểu câu nói, bước Rule kiểm phạm vi và bước người trình bày xử lý khi sai. | Một luồng chỉ có nhánh yêu cầu rõ sẽ bỏ qua câu phủ định hoặc câu mà khách rút lại giữa chừng. | Bổ sung nhánh giữ nguyên giao diện và cách khôi phục bản trước. |
+| CP5–6 Problem Statement | Dùng AI để rà lại sự liên hệ giữa điểm nghẽn và chỉ số đo. | Giúp tách thời gian phản hồi của prototype khỏi số buổi hẹn lại. | Độ trễ thấp chỉ cho biết bản xem trước hiện nhanh, chưa cho biết khách đã xác nhận bản sửa hay nhóm bớt phải hẹn lại. | Đo hai chỉ số riêng. Khi đếm buổi hẹn lại, chỉ tính các buổi cần xem bản sửa giao diện. |
+| CP6 Mức can thiệp / quyết định | Dùng AI để so sánh các mức can thiệp với phạm vi thử và làm rõ ngưỡng dừng. | Giúp đặt phương án sửa tay, Rule và Workflow cạnh nhau để xem mỗi cách cần gì từ người trình bày. | Bảng so sánh chỉ là lập luận dựa trên tài liệu và tình huống tổng hợp. Hiệu quả trong buổi pitch vẫn cần đo. | Chọn Workflow cho bản thử nội bộ và giữ cách sửa tay làm đối chứng. |
 
 ---
 
 ## 6. Reflection (CP7)
 
-Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
+**6.1. Điều học được từ các Problem Card của thành viên khác**
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Khi đặt card của Hiếu cạnh card đối chiếu hồ sơ HR, điểm dễ thấy nhất là mỗi con số cần gắn với một bước cụ thể. Card của Hiếu mô tả được vòng lặp từ lúc khách góp ý, nhóm họp nội bộ để sửa cho đến khi hẹn buổi trình bày tiếp. Còn ở card HR, mốc khoảng một ngày bao gồm cả đợt kiểm tra và bổ sung. Vẽ từng bước ra giúp đặt câu hỏi cụ thể hơn về khâu nào mất nhiều thời gian nhất.
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 
-**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Tên đề tài “cập nhật MVP realtime” đã gợi sẵn cách xử lý nên rất dễ bắt đầu từ giải pháp. Trong báo cáo nhóm, phần mô tả vấn đề tập trung vào việc người trình bày chưa thể sửa giao diện ngay khi khách góp ý. Nhóm phải chỉnh sửa nội bộ và có thể phải hẹn thêm buổi. Khi kiểm chứng, cần phân biệt buổi hẹn chỉ để xem bản sửa với buổi hẹn vì khách đổi phạm vi dự án, vì mỗi tình huống có thể cần cách xử lý khác nhau.
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+**6.3. Một thay đổi sau khi nhận phản biện**
+
+Ở CP2, phản biện về card hồ sơ HR chỉ ra rằng mốc khoảng một ngày bao gồm cả việc tìm hồ sơ, đối chiếu và bổ sung. Card sau đó ghi riêng thời gian quan sát được của cả đợt và thời gian ước tính cho từng bước. Cách phân biệt này cũng được áp dụng ở CP4 khi đối chiếu 15–20 phút trao đổi mỗi vòng với khoảng hai giờ của toàn bộ buổi pitch.
+
+**6.4. Điều bất ngờ khi đối chiếu các giải pháp đã có**
+
+Điểm đáng chú ý nhất khi đọc tài liệu là Figma Make có thể sửa bản xem trước khi người dùng chủ động gửi prompt. Trong bài của nhóm, phần cần kiểm tra thêm là công cụ có nhận ra lúc nào khách thật sự muốn sửa trong một cuộc nói chuyện hay không. Vì vậy, bộ kiểm thử có cả câu yêu cầu như “Đưa nút Đặt lịch lên đầu” và câu hỏi như “Nút Đặt lịch hiện nằm ở đâu?”. Kết quả hiện có là đối chiếu tài liệu. Mức tiết kiệm thời gian vẫn cần kiểm chứng bằng các tình huống thực tế.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
-**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Phần khó nhất khi chuẩn bị dữ kiện cho Problem Statement là chọn một baseline có thể đo lại. Số giờ họp cho biết tổng thời gian hai bên dành cho pitching, nhưng chưa cho biết bao nhiêu phút dành riêng cho việc làm rõ yêu cầu sửa giao diện. Vì vậy, cần ghi riêng thời gian họp, thời gian chỉnh sửa nội bộ và số buổi hẹn lại để xem bản sửa. Mốc 6–9 giờ mỗi MVP vẫn là ước tính phụ thuộc vào giả định có thêm khoảng một giờ chỉnh sửa sau mỗi buổi.
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+**6.6. Điều sẽ thay đổi nếu làm lại**
+
+Nếu làm lại, nên lấy dữ liệu của một dự án cụ thể ngay từ đầu và ghi rõ số buổi họp, việc xảy ra giữa hai buổi và lý do phải hẹn lại. Câu cần hỏi kỹ hơn là sau mỗi buổi nhóm có thật sự phải chỉnh sửa khoảng một giờ hay chỉ một số buổi mới cần sửa. Khi thử prototype, cũng nên dành thời gian cho các câu nói mơ hồ và câu hỏi thông thường, vì một lần cập nhật sai giữa buổi pitch có thể làm gián đoạn cuộc trao đổi.
+
+**6.7. Tóm tắt bài của nhóm Delta**
+
+Khi khách góp ý trong buổi pitch, nhóm thường phải sửa giao diện MVP sau buổi họp rồi có thể hẹn thêm một buổi để khách xem và xác nhận. Bản thử dùng bản chép cuối của lượt nói để nhận diện yêu cầu và cập nhật bản xem trước. Hiệu quả được đánh giá qua số buổi hẹn lại chỉ để xem bản sửa, cùng độ đúng, độ trễ và số lần sửa nhầm trên prototype. Công cụ chỉ được đổi nhãn hoặc vị trí nút Đặt lịch trên một màn hình và giữ nguyên giao diện khi gặp câu hỏi hoặc yêu cầu mơ hồ. Workflow phù hợp để thử vì AI cần hiểu cách nói của khách, còn các bước kiểm tra và áp thay đổi có thể đặt trước. Người trình bày xác nhận lại với khách và có thể quay về bản trước nếu cần. Nhóm chọn **Go cho bản thử nội bộ** để đo các chỉ số và so sánh với cách sửa trực tiếp trước khi cân nhắc dùng với khách.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+- Google Cloud. [Chép lời từ âm thanh truyền trực tiếp](https://docs.cloud.google.com/speech-to-text/docs/streaming-recognize) và [phân biệt kết quả tạm thời với kết quả cuối](https://docs.cloud.google.com/speech-to-text/docs/v1/speech-to-text-requests).
+- Figma Learn. [Chỉnh sửa tệp Figma Make](https://help.figma.com/hc/en-us/articles/42009840449175-Edit-a-Figma-Make-file) và [câu hỏi thường gặp về Figma Make](https://help.figma.com/hc/en-us/articles/31722591905559-Figma-Make-FAQs).
+- IETF. [RFC 6902 — JSON Patch](https://www.rfc-editor.org/rfc/rfc6902.html#section-4).
+- Nhóm Delta. [Báo cáo nhóm, mục 3.3](../team/group_report.md#33-research-giải-pháp-đã-có) và [bộ 20 tình huống kiểm thử MVP realtime](../assets/cp4-bo-tinh-huong-mvp.md).
+- Cao Trung Hiếu. [Problem Card #2 về các vòng chỉnh sửa MVP](2A202603993_CaoTrungHieu.md#problem-card-2). Nhóm Delta. [Slide Vấn đề và quy trình hiện tại](../assets/cp4-cac-vong-chinh-sua-mvp.html#slide-2).
