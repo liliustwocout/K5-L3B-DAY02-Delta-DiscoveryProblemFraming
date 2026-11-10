@@ -1,4 +1,4 @@
-# Báo cáo cá nhân — MSSV_HoTen
+# Báo cáo cá nhân — 2A202603993_CaoTrungHieu
 
 ## 1. Thông tin học viên
 
@@ -17,12 +17,12 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
 | 1 |Tốn thời gian|**Khi** kết thúc một buổi họp với khách hàng, **tôi (BA) muốn** có ngay bản ghi chú cô đọng các quyết định và việc cần làm, **để** gửi lên nhóm chung dự án mà không phải mất thêm ~30 phút tổng hợp, trong khi lúc họp còn phải vừa trả lời khách vừa ghi chép|PM, BA|BA làm 2 việc cùng lúc là trả lời khách hàng và note lại buổi họp, và kết thúc buổi họp mất ~30 phút tổng hợp cô đọng lại thông tin|
-| 2 |Lặp lại|**Khi** khách hàng đề xuất chỉnh sửa MVP sau buổi trình bày, **tôi muốn** nắm rõ cần đổi gì và trình bày lại nhanh cho khách, **để** không phải họp lại với team, thiết kế lại rồi chờ một buổi họp khác cho mỗi vòng chỉnh sửa (thường lặp `[...]` vòng mỗi MVP)|Cả team|Mỗi lần đề xuất chỉnh sửa MVP có thể mất từ 15-20 phút trao đổi lại thông tin và cập nhật, thời gian đề xuất về MVP thậm chí có thể kéo dài hết buổi họp pitching|
+| 2 |Lặp lại|**Khi** khách hàng đề xuất chỉnh sửa MVP sau buổi trình bày, **tôi muốn** nắm rõ cần đổi gì và trình bày lại nhanh cho khách, **để** không phải họp lại với team, thiết kế lại rồi chờ một buổi họp khác cho mỗi vòng chỉnh sửa (thường lặp 2–3 vòng mỗi MVP)|Cả team|Mỗi lần đề xuất chỉnh sửa MVP có thể mất từ 15-20 phút trao đổi lại thông tin và cập nhật, thời gian đề xuất về MVP thậm chí có thể kéo dài hết buổi họp pitching|
 | 3 |Pain từ người khác|Khi tiếp nhận hồ sơ hành chính công, nhân viên hành chính công thường bị quá tải khi vừa phải thực hiện việc tiếp nhận hồ sơ, vừa phải xử lý các công văn báo cáo nội bộ|Nhân viên|Việc tổng hợp thông tin để báo cáo nội bộ mất từ 2-3 tiếng với nhân viên hành chính công tuổi trung niên, mỗi tháng phải báo cáo lại từ 1-2 lần| 
 | 4 |Tốn thời gian|Mỗi thứ 7 hàng tuần, tôi phải báo cáo lại toàn bộ hiện trạng dự án cho công ty để sếp nắm được tình hình thực hiện dự án. Nhưng việc tổng hợp thông tin mất thời gian do team xài nhiều nền tảng rời rạc: Figma, Jira, Whatsapp, Telegram|CEO, PM|Mọi người phải có short meeting lúc tầm 4h30 để tổng hợp lại việc báo cáo, nhiều lúc báo cáo quá nhiều khiến team cảm thấy bị ngột ngạt|
-| 5 |Cần đọc, tổng hợp nhiều thông tin|**Khi** muốn xây dựng sự hiện diện cá nhân trên nhiều nền tảng mạng xã hội cùng lúc, **tôi muốn** dựng nhanh hồ sơ và nội dung nhất quán trên từng nền tảng, **để** người khác (nhà tuyển dụng, đối tác) thấy rõ thế mạnh của mình mà không phải mất 1 tuần tìm hiểu từng nền tảng|Bản thân|Số nền tảng muốn xuất hiện: Linkedln, Tiktok, Youtube|
+| 5 |Cần đọc, tổng hợp nhiều thông tin|**Khi** muốn xây dựng sự hiện diện cá nhân trên nhiều nền tảng mạng xã hội cùng lúc, **tôi muốn** dựng nhanh hồ sơ và nội dung nhất quán trên từng nền tảng, **để** người khác (nhà tuyển dụng, đối tác) thấy rõ thế mạnh của mình mà không phải mất 1 tuần tìm hiểu từng nền tảng|Bản thân|Muốn xuất hiện trên 3 nền tảng: LinkedIn, TikTok, YouTube; mất khoảng 1 tuần chỉ để tìm hiểu từng nền tảng, thêm 1–2 tháng để tìm ra điểm mạnh và làm các project phản ánh điểm mạnh đó|
 
-**Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
+**Nếu có dùng AI để gợi ý thêm:** 
 - AI tóm tắt problem của tôi: thiên về nhu cầu tổng hợp thông tin từ nhiều nguồn, và có liên quan đến nâng giá trị bản thân
 - AI cho rằng các problem số #4, số #1 thực tế. Nhưng cá nhân tôi cũng muốn thêm số 5 vào nữa
 ---
@@ -55,10 +55,10 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 Quy trình nháp hiện tại:
 
 ```text
-HIỆN TẠI — ~30 phút/buổi sau họp
+HIỆN TẠI — ~30–50 phút/buổi sau họp
 
 [Họp + ghi chú thô: trong buổi họp] → [Đọc lại ghi chú: ...']
-→ [Cô đọng thành quyết định/việc cần làm: ...'] ← BOTTLENECK (tổng ~30')
+→ [Cô đọng thành quyết định/việc cần làm: ...'] ← BOTTLENECK (tổng ~30–50')
 → [Gửi lên nhóm chung: ...'] → [Team đọc, hỏi lại: ...']
 ```
 
@@ -114,9 +114,9 @@ HIỆN TẠI — ~1 tuần chỉ riêng bước tìm hiểu
 
 ### Card muốn pitch nhất
 
-- Card số:
-- Vì sao:
-- Câu hỏi muốn nhóm phản biện:
+- Card số: 2 (chỉnh sửa MVP lặp lại sau buổi pitching)
+- Vì sao: Vòng lặp lặp lại mỗi MVP (2–3 vòng, 15–20 phút/vòng, có thể kéo dài 1–3 ngày họp) và tôi trực tiếp chịu. Phần này cũng có độ mơ hồ cao nên nhóm dễ cho ý kiến nhất về việc cần AI hay chỉ cần đổi cách làm
+- Câu hỏi muốn nhóm phản biện: Nếu bỏ buổi họp lại mà cập nhật MVP ngay, có giải được pain thật của khách không, hay chỉ cần chốt thay đổi với khách ngay trong buổi pitching là đủ?
 
 ### AI đã phản biện card thế nào
 
@@ -132,16 +132,16 @@ HIỆN TẠI — ~1 tuần chỉ riêng bước tìm hiểu
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Nêu ra Problem Card của tôi và phân tích mức độ hiệu quả | Problem card MVP của tôi được chọn |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Với bài tự động tạo CV của nhóm khác, tôi nêu ra nhóm nên thêm ý tưởng tự động kéo job từ các trang khác về hợp với CV bạn ấy | Đề xuất của tôi được ghi nhận |
+| Nhận phản biện | Câu hỏi tôi nhận được: Họ thấy mức độ ảnh hưởng của AI trong problem này khá lớn, họ hiểu nhầm rằng AI chỉ sửa giao diện | Tôi đã sửa gì: Không, MVP này nêu ra 2 trường hợp, sửa ít và sửa nhiều, nếu sửa ít AI sẽ tự làm, sửa nhiều, sửa cả 1 chức năng lớn AI sẽ đợi phê duyệt từ người dùng |
+| Gom cluster / cây OST | Tham gia trao đổi và phân nhóm các problem dựa trên điểm chung về nhu cầu, pain point và quy trình hiện tại. Tôi chú ý đến các vấn đề liên quan đến việc tổng hợp thông tin, giảm thời gian trao đổi và cải thiện quy trình làm việc. |Giúp nhóm nhìn ra những problem có cùng bản chất, tránh tập trung quá sớm vào một giải pháp AI cụ thể.|
+| Chọn candidate problem | Đưa ra góc nhìn về tính thực tế, mức độ ảnh hưởng và khả năng ứng dụng AI của các candidate problem. Tôi cũng chia sẻ trải nghiệm cá nhân với vấn đề chỉnh sửa MVP sau pitching.| Góp phần đánh giá problem dựa trên pain thực tế và khả năng triển khai, thay vì chỉ chọn ý tưởng có vẻ hấp dẫn về công nghệ.|
+| Kiểm chứng / research | Tham gia tìm hiểu và đánh giá xem problem nhóm lựa chọn đã có giải pháp nào trên thị trường hay chưa, đồng thời xem xét liệu AI có thực sự tạo ra giá trị khác biệt hay không.| Giúp nhóm có thêm cơ sở để đánh giá tính cần thiết của giải pháp và tránh xây dựng một sản phẩm chỉ giải quyết vấn đề đã có cách xử lý đơn giản hơn.|
+| Quy trình nhóm |Tham gia phân tích các bước từ khi khách hàng đề xuất chỉnh sửa MVP đến khi team trao đổi, cập nhật thiết kế và trình bày lại. Tôi đặc biệt quan tâm đến những bước phải lặp lại và gây mất thời gian. | Giúp làm rõ workflow hiện tại, xác định những điểm có thể tối ưu và cơ sở để đề xuất workflow mới.|
+| Problem Statement |	Đóng góp góc nhìn từ trải nghiệm thực tế khi làm việc với MVP, đặc biệt là vấn đề phải trao đổi lại nhiều lần sau khi khách hàng đưa ra feedback. | Giúp problem được diễn đạt cụ thể hơn, tập trung vào việc giảm vòng lặp trao đổi và thời gian cập nhật MVP thay vì chỉ mô tả mong muốn ứng dụng AI.|
+| Mức can thiệp AI |Đề xuất phân chia hai trường hợp: thay đổi nhỏ thì AI có thể tự thực hiện; thay đổi lớn liên quan đến chức năng quan trọng thì AI cần chờ người dùng phân tích và phê duyệt trước khi thực hiện.| Giúp nhóm xác định ranh giới giữa tự động hóa và quyền kiểm soát của con người, tránh để AI tự ý thay đổi những thành phần quan trọng của MVP.|
+| Quyết định | Tham gia đánh giá tính khả thi của hướng triển khai AI trong quy trình pitching MVP. Quan điểm của tôi là nên thử nghiệm trong phạm vi nội bộ trước khi mở rộng.|Hướng tới quyết định Go với phạm vi thử nghiệm có kiểm soát, sử dụng thời gian triển khai và số vòng chỉnh sửa MVP làm tiêu chí đánh giá hiệu quả. |
 
 ---
 
@@ -149,12 +149,12 @@ HIỆN TẠI — ~1 tuần chỉ riêng bước tìm hiểu
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Nhờ AI nhận xét 5 problem đã tự scan và gợi ý cách viết lại Job Story | Chỉ ra Job Story lẫn giải pháp, thiếu dấu hiệu thật; gom 3 problem cùng cluster "tổng hợp thông tin" | Hiểu nhầm problem 5 là "tìm điểm mạnh bản thân" và tìm số liệu cho đúng hướng sai đó | Tôi chỉnh lại: pain là dựng nhanh thương hiệu trên nhiều nền tảng (LinkedIn, TikTok, YouTube); vẫn giữ problem 5 dù AI cho là yếu |
+| CP2 Problem Card | Nhờ AI phản biện top 3, viết lại cột Problem theo dạng pain và soạn nháp 3 Problem Card | Giúp tách pain khỏi giải pháp; nhắc rằng chưa có bằng chứng ClickUp không giải được problem báo cáo | Đề xuất đổi ô "chưa chắc" của card MVP; số liệu thị trường tìm được đến từ blog bán công cụ nên không dùng được | Giữ câu "chưa chắc" gốc của tôi; tự bổ sung số thật vào card (2–3 vòng MVP, 30–50 phút/buổi họp, target) |
+| CP4 Research | Nhờ AI tìm hiểu các giải pháp hiện có và nghiên cứu problem của nhóm.|Giúp tổng hợp thông tin và tìm ra các giải pháp tương tự trên thị trường. |Một số nguồn thiếu độ tin cậy, đặc biệt là blog quảng cáo sản phẩm. |Tự kiểm tra nguồn và không sử dụng số liệu chưa được xác thực. |
+| CP5 Quy trình |Nhờ AI phân tích workflow và xác định bottleneck |Giúp phân rã quy trình thành các bước rõ ràng. |AI đôi khi mặc định bước tốn thời gian nhất là bottleneck mà chưa có bằng chứng. |Đối chiếu với trải nghiệm thực tế và phân biệt số liệu với giả thuyết. |
+| CP5–6 Problem Statement | Nhờ AI hỗ trợ diễn đạt Problem Statement rõ ràng hơn.|Giúp phân biệt problem thực tế với solution. |AI đôi khi vẫn thiên về solution-first. | Tập trung vào pain point là vòng lặp trao đổi và cập nhật MVP nhiều lần.|
+| CP6 Mức can thiệp / quyết định |Nhờ AI phản biện mức độ tự động hóa và rủi ro khi AI tự cập nhật MVP |Giúp xác định trường hợp nào AI có thể tự thực hiện, trường hợp nào cần con người duyệt. |AI chưa đánh giá đầy đủ độ phức tạp của các thay đổi về logic nghiệp vụ. |Chia thành thay đổi nhỏ AI tự xử lý và thay đổi lớn cần người dùng phê duyệt; đề xuất thử nghiệm nội bộ trước. |
 
 ---
 
@@ -163,19 +163,40 @@ HIỆN TẠI — ~1 tuần chỉ riêng bước tìm hiểu
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+- Tôi thấy do trải nghiệm của các bạn còn ít trong môi trường doanh nghiệp nên có thể top problem của các bạn khác theo tôi efficient chưa cao lắm. Có một số top problem hoàn toàn có thể sử dụng thuật toán thay vì AI
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+- Tất nhiên là có, những lúc ấy nhóm sẽ research hoặc trao đổi với AI xem giải pháp đó thật sự đã được khắc phục trong thực tế chưa? Nếu đã có rồi thì swap sang chủ đề khác. Nhưng cũng cần phân biệt, ở đây problem card của tôi hầu hết là viết theo problem, nhưng cá nhân tôi đôi khi lại muốn viết theo ideal (tôi cảm giác có nhu cầu cho phần này, chứ ko phải khuyết thiếu hoặc gây khó khăn cho phần này)
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+- Hầu hết các thành viên bổ sung, góp ý để phát triển ý tưởng của tôi chứ phản biện hoàn toàn thì chưa hẳn. Nhưng tôi đã bị phản biện khi thuyết trình nhóm, cụ thể là nhóm bạn khác cảm thấy solution của nhóm chưa đủ hấp dẫn. Vì thế, tôi đã phải giải thích kỹ hơn ý tưởng MVP của nhóm theo tùy loại bối cảnh (bối cảnh công việc dễ thực hiện và bối cảnh chức năng đó lớn cần phân tích trước khi thực hiện)
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+- Problem "MVP" của tôi hình như mỗi tôi gặp phải, hầu hết sinh viên chưa đi làm nên cảm giác họ chưa thấy impact lắm trong solution
+- Những hầu hết các nhóm còn lại raise ý tưởng của tôi trong cụm 5 nhóm nên tôi cũng thấy vui
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+- Điều khó nhất khi viết Problem Statement theo tôi là đặt câu hỏi 5-Why, tôi cảm giác mình vẫn đi ngang thay vì đi sâu trong việc phân tích chủ chốt của vấn đề. Có lẽ lối tư duy của tôi vẫn đang bị engineering quá,
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+- Nếu làm lại, tôi sẽ cố gắng để raise ý tưởng về xây dựng thương hiệu cá nhân bằng AI, đây là problem của riêng tôi nên chưa có nhiều thời gian kiểm nghiệm lắm, tức là số liệu chưa cụ thể nên tôi chưa làm. Tôi sẽ phản biện mạnh hơn ở việc đánh vào việc nhu cầu xây dựng thương hiệu cá nhân, đây là nhu cầu thiết thực khi mà giờ ai cũng thích làm creator, ngoài ra nhà tuyển dụng cũng muốn ứng viên có cách nào đó show off được toàn bộ kỹ năng của mình
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+- Đại loại bài hôm nay là về Design Thinking giúp chúng ta cụ thể hóa được chain/chuỗi suy nghĩ của bản thân khi bắt đầu tiếp cận vào việc "muốn tạo ra thứ gì đó tốt". Để chain hóa được chúng ta cần đi theo:
++ Problem: Pain thật, có cactor, tình huống và con số thống kê
+-> Mỗi lần khách đề xuất chỉnh sửa MVP, tôi phải họp lại với team rồi trình bày ở buổi khác, lặp 2-3 ngày
++ Quy trình: Các bước con người đang làm để xong việc, có số phút
+-> Khách đề xuất → họp chốt thay đổi → thiết kế lại → trình bày lại vào ngày khác
++ Bottleneck: Một bước cụ thể làm chậm cả quy trình (phần của quy trình)
+-> Bước họp chốt thay đổi có thể lặp lại, 2 tiếng mỗi ngày
++ Metric: Cách đo thành công: baseline → target → cách đo
+-> Từ 2–3 vòng/MVP xuống 1 vòng, và khách hàng có chốt mua MVP không?
++ Boundary: Ranh giới AI không được vượt và khi nào người phải kiểm tra
+-> Chức năng lớn: AI không tự thiết kê lại màn hình, cần lắng nghe kĩ nội dung họp và cần người dùng duyệt
++ Mức can thiệp: Workflow
+-> AI đóng vai trò lắng nghe nội dung họp và đồng thời điều chỉnh MVP, tùy theo mức độ thay đổi
++ Quyết định: Go
+-> Triển khai nội bộ cho sản phẩm pitching nội bộ trong công ty, nếu sau 1 tháng mà thời gian triển khai sản phẩm không giảm 30-40% thì thôi
 ---
 
 ## 7. Tài liệu tham khảo
