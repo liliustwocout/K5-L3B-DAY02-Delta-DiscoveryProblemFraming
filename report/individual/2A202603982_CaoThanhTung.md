@@ -188,15 +188,15 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 
-- Có, khi đó nhóm thảo luận với nhau về tính khả thi của đề tài và các giải pháp đã có
+- Có, khi đó nhóm thảo luận với nhau về tính khả thi của đề tài và các giải pháp đã có, từ đó xây dựng lại nội dung của giải pháp phải bám sát với vấn đề nêu ra.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
-- Tôi nhận được góp ý và đề xuất của các thành viên, từ đó xây dựng được nội dung problem và giải pháp tốt hơn.
+- Ban đầu tôi định bảo vệ ý tưởng xây dựng công cụ kiểm tra checklist nộp bài lab . Tuy nhiên, sau khi nghe thành viên nhóm pitch về nỗi đau thực tế của team khi đi pitching MVP với khách hàng bị trễ cả tuần chỉ vì sửa vài chi tiết giao diện nhỏ, tôi thấy bài toán đó có tác động kinh doanh lớn hơn và xứng đáng làm đề tài chung cho nhóm, nên tôi đã đồng thuận chuyển hướng sang bài toán cập nhật MVP realtime.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
-- Điều làm tôi bất ngờ là hầu hết các problem đều đã có các giải pháp được xây dựng.
+- Điều làm tôi bất ngờ là hầu hết các problem đều đã có các giải pháp được xây dựng. Vì vậy nhóm cần cân nhắc các ưu/nhược điểm của các giải pháp có sẵn đó, so sánh với giải pháp hiện tại của nhóm
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
@@ -204,7 +204,7 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
-- Tôi sẽ phản biện nhóm mạnh hơn ở vấn đề họ gặp thực tế
+- Tôi sẽ phản biện nhóm mạnh hơn ở vấn đề họ gặp thực tế, và giải pháp họ đưa ra so với các giải pháp đã có sắn trên thị trường.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
@@ -215,4 +215,10 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 ## 7. Tài liệu tham khảo
 
--
+1. **Google Cloud.** *Speech-to-Text: Streaming recognition & Recognition requests.* Truy cập tại: https://docs.cloud.google.com/speech-to-text/docs/streaming-recognize 
+2. **Figma.** *Edit a Figma Make file & FAQs.* Truy cập tại: https://help.figma.com/hc/en-us/articles/42009840449175-Edit-a-Figma-Make-file
+3. **IETF.** *RFC 6902: JavaScript Object Notation (JSON) Patch.* Truy cập tại: https://www.rfc-editor.org/rfc/rfc6902.html
+4. **Design Council (UK).** *Framework for Innovation: The Double Diamond design process.* Truy cập tại: https://www.designcouncil.org.uk/resources/framework-for-innovation/ 
+5. **Rob Fitzpatrick (2013).** *The Mom Test: How to talk to customers & learn if your business is a good idea when everyone is lying to you.* 
+6. **Anthropic (2024).** *Building Effective Agents.* Truy cập tại: https://www.anthropic.com/research/building-effective-agents 
+7. **Marty Cagan / SVPG.** *The Four Big Risks: Value, Usability, Feasibility, Viability.* Truy cập tại: https://www.svpg.com/four-big-risks/ 
